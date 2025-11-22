@@ -3,8 +3,12 @@ import {
   type InsertUser,
   type ContactSubmission,
   type InsertContactSubmission,
+  users,
+  contactSubmissions,
 } from "@shared/schema";
-import { randomUUID } from "crypto";
+import { drizzle } from "drizzle-orm/node-postgres";
+import { Pool } from "pg";
+import { eq, desc } from "drizzle-orm";
 
 // modify the interface with any CRUD methods
 // you might need
@@ -19,50 +23,63 @@ export interface IStorage {
   getAllContactSubmissions(): Promise<ContactSubmission[]>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<string, User>;
-  private contactSubmissions: Map<string, ContactSubmission>;
+// Singleton pool for database connections
+let pool: Pool | null = null;
+
+function getPool(): Pool {
+  if (!pool) {
+    if (!process.env.DATABASE_URL) {
+      throw new Error("DATABASE_URL environment variable is required");
+    }
+    pool = new Pool({ connectionString: process.env.DATABASE_URL });
+  }
+  return pool;
+}
+
+export class DBStorage implements IStorage {
+  private db;
 
   constructor() {
-    this.users = new Map();
-    this.contactSubmissions = new Map();
+    this.db = drizzle(getPool());
   }
 
   async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
+    const result = await this.db.select().from(users).where(eq(users.id, id));
+    return result[0];
   }
 
   async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+    const result = await this.db
+      .select()
+      .from(users)
+      .where(eq(users.username, username));
+    return result[0];
   }
 
   async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
+    const result = await this.db
+      .insert(users)
+      .values(insertUser)
+      .returning();
+    return result[0];
   }
 
   async createContactSubmission(
     insertSubmission: InsertContactSubmission
   ): Promise<ContactSubmission> {
-    const id = randomUUID();
-    const submission: ContactSubmission = {
-      ...insertSubmission,
-      id,
-      createdAt: new Date(),
-    };
-    this.contactSubmissions.set(id, submission);
-    return submission;
+    const result = await this.db
+      .insert(contactSubmissions)
+      .values(insertSubmission)
+      .returning();
+    return result[0];
   }
 
   async getAllContactSubmissions(): Promise<ContactSubmission[]> {
-    return Array.from(this.contactSubmissions.values()).sort(
-      (a, b) => b.createdAt.getTime() - a.createdAt.getTime()
-    );
+    return await this.db
+      .select()
+      .from(contactSubmissions)
+      .orderBy(desc(contactSubmissions.createdAt));
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DBStorage();
