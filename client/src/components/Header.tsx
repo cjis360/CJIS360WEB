@@ -1,12 +1,20 @@
 import { useState } from 'react';
 import { Menu, X, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link, useLocation } from 'wouter';
 import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [location] = useLocation();
+  const isHomePage = location === '/';
 
   const scrollToSection = (id: string) => {
+    // If we're not on home page, navigate there first
+    if (!isHomePage) {
+      window.location.href = `/#${id}`;
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -47,6 +55,14 @@ export default function Header() {
             >
               Industries
             </Button>
+            <Link href="/blog">
+              <Button
+                variant="ghost"
+                data-testid="link-nav-resources"
+              >
+                Resources
+              </Button>
+            </Link>
             <Button
               variant="ghost"
               onClick={() => scrollToSection('trust')}

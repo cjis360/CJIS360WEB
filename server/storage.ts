@@ -3,8 +3,10 @@ import {
   type InsertUser,
   type ContactSubmission,
   type InsertContactSubmission,
+  type BlogPost,
   users,
   contactSubmissions,
+  blogPosts,
 } from "@shared/schema";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
@@ -21,6 +23,9 @@ export interface IStorage {
     submission: InsertContactSubmission
   ): Promise<ContactSubmission>;
   getAllContactSubmissions(): Promise<ContactSubmission[]>;
+  getAllBlogPosts(): Promise<BlogPost[]>;
+  getBlogPostBySlug(slug: string): Promise<BlogPost | undefined>;
+  getBlogPostsByCategory(category: string): Promise<BlogPost[]>;
 }
 
 // Singleton pool for database connections
@@ -79,6 +84,29 @@ export class DBStorage implements IStorage {
       .select()
       .from(contactSubmissions)
       .orderBy(desc(contactSubmissions.createdAt));
+  }
+
+  async getAllBlogPosts(): Promise<BlogPost[]> {
+    return await this.db
+      .select()
+      .from(blogPosts)
+      .orderBy(desc(blogPosts.publishedAt));
+  }
+
+  async getBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
+    const result = await this.db
+      .select()
+      .from(blogPosts)
+      .where(eq(blogPosts.slug, slug));
+    return result[0];
+  }
+
+  async getBlogPostsByCategory(category: string): Promise<BlogPost[]> {
+    return await this.db
+      .select()
+      .from(blogPosts)
+      .where(eq(blogPosts.category, category))
+      .orderBy(desc(blogPosts.publishedAt));
   }
 }
 

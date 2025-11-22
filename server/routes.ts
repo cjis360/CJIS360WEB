@@ -65,6 +65,43 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Blog endpoints
+  app.get("/api/blog", async (req, res) => {
+    try {
+      const { category } = req.query;
+      const posts = category
+        ? await storage.getBlogPostsByCategory(category as string)
+        : await storage.getAllBlogPosts();
+      res.json(posts);
+    } catch (error) {
+      console.error("Error fetching blog posts:", error);
+      res.status(500).json({
+        success: false,
+        message: "Failed to fetch blog posts",
+      });
+    }
+  });
+
+  app.get("/api/blog/:slug", async (req, res) => {
+    try {
+      const post = await storage.getBlogPostBySlug(req.params.slug);
+      if (!post) {
+        res.status(404).json({
+          success: false,
+          message: "Blog post not found",
+        });
+        return;
+      }
+      res.json(post);
+    } catch (error) {
+      console.error("Error fetching blog post:", error);
+      res.status(500).json({
+        success: false,
+        message: "Failed to fetch blog post",
+      });
+    }
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;
