@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSubmissionSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
+import { sendContactNotification } from "./lib/resend";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission endpoint
@@ -11,7 +12,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const validatedData = insertContactSubmissionSchema.parse(req.body);
       const submission = await storage.createContactSubmission(validatedData);
 
-      // In a real application, you would send an email notification here
+      // Send email notification (don't wait for it to complete)
+      sendContactNotification({
+        fullName: submission.fullName,
+        email: submission.email,
+        agencyName: submission.agencyName,
+        phone: submission.phone || undefined,
+        message: submission.message,
+      }).catch(error => {
+        console.error("Failed to send email notification:", error);
+      });
+
       console.log("Contact submission received:", {
         id: submission.id,
         email: submission.email,
