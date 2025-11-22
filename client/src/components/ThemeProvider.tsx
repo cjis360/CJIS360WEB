@@ -9,10 +9,16 @@ type ThemeContextType = {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-// Helper to get initial theme preference
+// Helper to get initial theme from DOM (set by inline script) or preferences
 function getInitialTheme(): Theme {
   if (typeof window === 'undefined') return 'light';
   
+  // First check if dark class is already set by inline script
+  if (typeof document !== 'undefined' && document.documentElement.classList.contains('dark')) {
+    return 'dark';
+  }
+  
+  // Otherwise check localStorage
   const stored = localStorage.getItem('theme');
   if (stored === 'dark' || stored === 'light') {
     return stored;
