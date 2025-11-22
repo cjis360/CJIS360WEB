@@ -4,9 +4,11 @@ import {
   type ContactSubmission,
   type InsertContactSubmission,
   type BlogPost,
+  type CaseStudy,
   users,
   contactSubmissions,
   blogPosts,
+  caseStudies,
 } from "@shared/schema";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
@@ -26,6 +28,9 @@ export interface IStorage {
   getAllBlogPosts(): Promise<BlogPost[]>;
   getBlogPostBySlug(slug: string): Promise<BlogPost | undefined>;
   getBlogPostsByCategory(category: string): Promise<BlogPost[]>;
+  getAllCaseStudies(): Promise<CaseStudy[]>;
+  getCaseStudyBySlug(slug: string): Promise<CaseStudy | undefined>;
+  getCaseStudiesByIndustry(industry: string): Promise<CaseStudy[]>;
 }
 
 // Singleton pool for database connections
@@ -107,6 +112,29 @@ export class DBStorage implements IStorage {
       .from(blogPosts)
       .where(eq(blogPosts.category, category))
       .orderBy(desc(blogPosts.publishedAt));
+  }
+
+  async getAllCaseStudies(): Promise<CaseStudy[]> {
+    return await this.db
+      .select()
+      .from(caseStudies)
+      .orderBy(desc(caseStudies.publishedAt));
+  }
+
+  async getCaseStudyBySlug(slug: string): Promise<CaseStudy | undefined> {
+    const result = await this.db
+      .select()
+      .from(caseStudies)
+      .where(eq(caseStudies.slug, slug));
+    return result[0];
+  }
+
+  async getCaseStudiesByIndustry(industry: string): Promise<CaseStudy[]> {
+    return await this.db
+      .select()
+      .from(caseStudies)
+      .where(eq(caseStudies.industry, industry))
+      .orderBy(desc(caseStudies.publishedAt));
   }
 }
 

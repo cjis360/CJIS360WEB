@@ -102,6 +102,43 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Case studies endpoints
+  app.get("/api/case-studies", async (req, res) => {
+    try {
+      const { industry } = req.query;
+      const studies = industry
+        ? await storage.getCaseStudiesByIndustry(industry as string)
+        : await storage.getAllCaseStudies();
+      res.json(studies);
+    } catch (error) {
+      console.error("Error fetching case studies:", error);
+      res.status(500).json({
+        success: false,
+        message: "Failed to fetch case studies",
+      });
+    }
+  });
+
+  app.get("/api/case-studies/:slug", async (req, res) => {
+    try {
+      const study = await storage.getCaseStudyBySlug(req.params.slug);
+      if (!study) {
+        res.status(404).json({
+          success: false,
+          message: "Case study not found",
+        });
+        return;
+      }
+      res.json(study);
+    } catch (error) {
+      console.error("Error fetching case study:", error);
+      res.status(500).json({
+        success: false,
+        message: "Failed to fetch case study",
+      });
+    }
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;

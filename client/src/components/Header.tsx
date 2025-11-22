@@ -63,6 +63,14 @@ export default function Header() {
                 Resources
               </Button>
             </Link>
+            <Link href="/case-studies">
+              <Button
+                variant="ghost"
+                data-testid="link-nav-case-studies"
+              >
+                Case Studies
+              </Button>
+            </Link>
             <Button
               variant="ghost"
               onClick={() => scrollToSection('trust')}

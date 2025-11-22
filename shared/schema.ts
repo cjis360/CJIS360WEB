@@ -62,3 +62,29 @@ export const insertBlogPostSchema = createInsertSchema(blogPosts).omit({
 
 export type InsertBlogPost = z.infer<typeof insertBlogPostSchema>;
 export type BlogPost = typeof blogPosts.$inferSelect;
+
+export const caseStudies = pgTable("case_studies", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  title: text("title").notNull(),
+  slug: text("slug").notNull().unique(),
+  clientName: text("client_name").notNull(),
+  clientType: text("client_type").notNull(),
+  industry: text("industry").notNull(),
+  challenge: text("challenge").notNull(),
+  solution: text("solution").notNull(),
+  results: text("results").array().notNull(),
+  testimonial: text("testimonial"),
+  testimonialAuthor: text("testimonial_author"),
+  testimonialRole: text("testimonial_role"),
+  metrics: text("metrics").array().notNull().default(sql`ARRAY[]::text[]`),
+  tags: text("tags").array().notNull().default(sql`ARRAY[]::text[]`),
+  publishedAt: timestamp("published_at").notNull().defaultNow(),
+});
+
+export const insertCaseStudySchema = createInsertSchema(caseStudies).omit({
+  id: true,
+  publishedAt: true,
+});
+
+export type InsertCaseStudy = z.infer<typeof insertCaseStudySchema>;
+export type CaseStudy = typeof caseStudies.$inferSelect;
