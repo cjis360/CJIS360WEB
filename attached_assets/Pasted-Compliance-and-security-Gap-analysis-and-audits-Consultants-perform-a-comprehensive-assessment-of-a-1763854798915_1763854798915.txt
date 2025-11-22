@@ -1,0 +1,18 @@
+Compliance and security
+Gap analysis and audits: Consultants perform a comprehensive assessment of a client's current security posture to identify gaps between existing practices and CJIS requirements. They also help prepare agencies for triennial CJIS audits.
+Policy development: This involves creating and reviewing policies to ensure they align with the strict CJIS security standards. These can include system security plans (SSPs) and documentation for all relevant security controls.
+Risk assessment: Consulting companies help clients conduct regular risk assessments to identify, evaluate, and mitigate cybersecurity risks in their environments.
+Incident response planning: They help develop and implement a framework for how clients should respond to and contain security breaches and other incidents involving Criminal Justice Information (CJI). 
+Technology and implementation
+System design and engineering: Consultants assist in designing and implementing robust, CJIS-compliant IT infrastructures, whether on-premises, in the cloud, or in a hybrid environment. This includes securing networks, implementing firewalls, and managing access control.
+Data integration: This service helps agencies connect disparate data silos from various branches of the criminal justice system—including police, courts, and corrections—to provide a more complete and useful dataset.
+System selection and procurement: Acting as vendor-neutral advisors, consultants help agencies assess, select, and procure new technology solutions such as Records Management Systems (RMS), Jail Management Systems (JMS), and Computer-Aided Dispatch (CAD).
+Managed IT services: For agencies with limited internal IT staff, a CJIS consulting company can offer ongoing managed services, including maintenance, remote support, and cloud-based backups. 
+Training and operational improvement
+Security awareness training: Consultants offer tailored training sessions to ensure that all employees who handle CJIS data understand and can implement required security standards.
+Operational analysis: This involves comparing a client's operational procedures with industry best practices and benchmarks to identify areas for improvement and increased efficiency.
+Process improvement: Companies help optimize existing workflows for critical criminal justice functions, such as investigations, evidence handling, and records management, to ensure they are both efficient and compliant.
+Specialized training: Some consultants with law enforcement backgrounds provide specialized training on topics such as use-of-force protocols, crime scene investigation, and tactical procedures. 
+Strategic services
+Law enforcement accreditation: Consultants can guide agencies through the complex process of achieving and maintaining law enforcement accreditation.
+Strategic planning: This service helps criminal justice organizations develop long-term strategies to address complex issues and meet agency goals.

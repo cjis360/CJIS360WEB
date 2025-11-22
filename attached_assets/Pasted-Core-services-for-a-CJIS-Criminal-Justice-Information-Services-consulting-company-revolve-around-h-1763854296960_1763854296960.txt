@@ -1,0 +1,18 @@
+Core services for a CJIS (Criminal Justice Information Services) consulting company revolve around helping organizations achieve and maintain compliance with the CJIS Security Policy, including security assessments, policy and procedure development, and IT infrastructure solutions. Other key services include providing risk management strategies, training programs, and assistance with data integration and audit support to ensure the secure and compliant handling of criminal justice information. 
+Compliance and risk management
+CJIS Security Policy compliance: Offering support to meet the requirements of the policy, including initial and annual gap assessments to identify areas of non-compliance.
+Security assessments: Conducting physical and perimeter security assessments and evaluating current security measures.
+Risk management: Developing risk strategies and methodologies to reduce the organization's exposure to security threats.
+Documentation and reporting: Assisting with creating and managing necessary documentation, such as policies, procedures, and audit logs.
+Security awareness training: Providing mandatory training to ensure employees understand their roles in maintaining compliance. 
+IT and infrastructure
+Managed IT services: Offering ongoing support for network, servers, and other essential IT systems.
+Cybersecurity solutions: Implementing and managing services like 24/7 monitoring, endpoint management, and Multi-Factor Authentication (MFA).
+Data integration: Helping to integrate different data sources and systems to ensure data integrity and security.
+Cloud services: Designing and managing secure cloud environments, including private and public cloud options that meet CJIS requirements.
+Incident response: Developing and implementing plans for identifying, containing, and remediating security incidents. 
+Strategic and operational support
+Strategic planning: Helping clients develop a long-term strategy for compliance and digital transformation.
+Implementation support: Providing hands-on assistance to implement new security controls and solutions.
+Audit support: Preparing organizations for and assisting them during official CJIS audits.
+Remediation: Providing actionable steps and support to fix identified security and compliance gaps. 
