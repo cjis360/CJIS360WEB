@@ -166,9 +166,9 @@ export default function Privacy() {
                 </p>
                 <div className="bg-card border border-card-border rounded-md p-6 space-y-2">
                   <p className="text-foreground"><strong>CJIS360 Compliance Solutions</strong></p>
-                  <p className="text-muted-foreground">123 Compliance Avenue<br />Washington, DC 20001</p>
+                  <p className="text-muted-foreground">7590 Via Luria<br />Lake Worth, FL 33467</p>
                   <p className="text-muted-foreground">Email: <a href="mailto:privacy@cjis360.com" className="text-primary hover:underline">privacy@cjis360.com</a></p>
-                  <p className="text-muted-foreground">Phone: <a href="tel:+18005551234" className="text-primary hover:underline">(800) 555-1234</a></p>
+                  <p className="text-muted-foreground">Phone: <a href="tel:+15613181952" className="text-primary hover:underline">(561) 318-1952</a></p>
                 </div>
               </div>
 
