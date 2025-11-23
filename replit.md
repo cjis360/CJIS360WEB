@@ -27,9 +27,18 @@ Preferred communication style: Simple, everyday language.
 - Consistent spacing system using Tailwind units (4, 6, 8, 12, 16, 20, 24)
 
 **Page Structure**:
-- Single-page application with smooth scroll navigation
-- Sections: Hero, Services, Industries, Trust/Testimonials, Contact
-- Sticky header with navigation and theme toggle
+- **Home (/)**: Single-page with smooth scroll navigation including Hero, Services, Industries, Trust/Testimonials, and Contact sections
+- **Services (/services)**: Standalone page with comprehensive service offerings, market positioning, core value proposition, and differentiators
+- **Industries (/industries)**: Dedicated page showcasing all sectors served (Law Enforcement, Courts, Government, Private Security, Corrections, Technology Vendors)
+- **Resources (/resources)**: Hub page linking to Blog and Case Studies with featured topics
+- **About (/about)**: Company information including mission, team expertise across CJIS areas, and core values
+- **Contact (/contact)**: Dedicated contact page with form and detailed contact information
+- **Privacy (/privacy)**: Comprehensive privacy policy aligned with CJIS compliance requirements
+- **Blog (/blog)**: Blog listing page with 5 seeded CJIS compliance articles
+- **Blog Post (/blog/:slug)**: Individual blog post pages with Markdown rendering
+- **Case Studies (/case-studies)**: Case studies listing with industry filtering
+- **Case Study Detail (/case-studies/:slug)**: Individual case study pages
+- Sticky header with navigation and theme toggle across all pages
 
 ### Backend Architecture
 
@@ -75,6 +84,29 @@ Preferred communication style: Simple, everyday language.
    - agency_name (text, required)
    - phone (text, optional)
    - message (text, required)
+   - created_at (timestamp, auto)
+
+3. **blog_posts**: Blog articles
+   - id (UUID, primary key)
+   - title (text, required)
+   - slug (text, unique, required)
+   - content (text, required, Markdown format)
+   - excerpt (text, required)
+   - category (text, required)
+   - published_at (timestamp, required)
+   - created_at (timestamp, auto)
+
+4. **case_studies**: Success stories
+   - id (UUID, primary key)
+   - title (text, required)
+   - slug (text, unique, required)
+   - client_name (text, required)
+   - industry (text, required)
+   - challenge (text, required)
+   - solution (text, required)
+   - results (text, required)
+   - metrics (jsonb, optional)
+   - published_at (timestamp, required)
    - created_at (timestamp, auto)
 
 **Design Decision**: Database schema is defined but the application currently uses in-memory storage. This allows rapid development while maintaining a clear migration path to PostgreSQL when needed.

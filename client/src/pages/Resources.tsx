@@ -74,12 +74,12 @@ export default function Resources() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Link href={resource.link}>
-                      <Button className="w-full gap-2" data-testid={`button-resource-${index}`}>
+                    <Button className="w-full gap-2" asChild data-testid={`button-resource-${index}`}>
+                      <Link href={resource.link}>
                         {resource.buttonText}
                         <ArrowRight size={16} />
-                      </Button>
-                    </Link>
+                      </Link>
+                    </Button>
                   </CardContent>
                 </Card>
               );

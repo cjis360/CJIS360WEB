@@ -41,46 +41,21 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-2">
-            <Link href="/services">
-              <Button
-                variant="ghost"
-                data-testid="link-nav-services"
-              >
-                Services
-              </Button>
-            </Link>
-            <Link href="/industries">
-              <Button
-                variant="ghost"
-                data-testid="link-nav-industries"
-              >
-                Industries
-              </Button>
-            </Link>
-            <Link href="/resources">
-              <Button
-                variant="ghost"
-                data-testid="link-nav-resources"
-              >
-                Resources
-              </Button>
-            </Link>
-            <Link href="/about">
-              <Button
-                variant="ghost"
-                data-testid="link-nav-about"
-              >
-                About
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button
-                variant="ghost"
-                data-testid="link-nav-contact"
-              >
-                Contact
-              </Button>
-            </Link>
+            <Button variant="ghost" asChild data-testid="link-nav-services">
+              <Link href="/services">Services</Link>
+            </Button>
+            <Button variant="ghost" asChild data-testid="link-nav-industries">
+              <Link href="/industries">Industries</Link>
+            </Button>
+            <Button variant="ghost" asChild data-testid="link-nav-resources">
+              <Link href="/resources">Resources</Link>
+            </Button>
+            <Button variant="ghost" asChild data-testid="link-nav-about">
+              <Link href="/about">About</Link>
+            </Button>
+            <Button variant="ghost" asChild data-testid="link-nav-contact">
+              <Link href="/contact">Contact</Link>
+            </Button>
           </nav>
 
           {/* CTA Buttons */}
@@ -127,51 +102,21 @@ export default function Header() {
                 <span className="text-sm font-medium text-muted-foreground">Theme</span>
                 <ThemeToggle />
               </div>
-              <Link href="/services">
-                <Button
-                  variant="ghost"
-                  className="justify-start w-full"
-                  data-testid="link-services-mobile"
-                >
-                  Services
-                </Button>
-              </Link>
-              <Link href="/industries">
-                <Button
-                  variant="ghost"
-                  className="justify-start w-full"
-                  data-testid="link-industries-mobile"
-                >
-                  Industries
-                </Button>
-              </Link>
-              <Link href="/resources">
-                <Button
-                  variant="ghost"
-                  className="justify-start w-full"
-                  data-testid="link-resources-mobile"
-                >
-                  Resources
-                </Button>
-              </Link>
-              <Link href="/about">
-                <Button
-                  variant="ghost"
-                  className="justify-start w-full"
-                  data-testid="link-about-mobile"
-                >
-                  About
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button
-                  variant="ghost"
-                  className="justify-start w-full"
-                  data-testid="link-contact-mobile"
-                >
-                  Contact
-                </Button>
-              </Link>
+              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-services-mobile">
+                <Link href="/services">Services</Link>
+              </Button>
+              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-industries-mobile">
+                <Link href="/industries">Industries</Link>
+              </Button>
+              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-resources-mobile">
+                <Link href="/resources">Resources</Link>
+              </Button>
+              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-about-mobile">
+                <Link href="/about">About</Link>
+              </Button>
+              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-contact-mobile">
+                <Link href="/contact">Contact</Link>
+              </Button>
               <Button
                 variant="ghost"
                 asChild
@@ -187,7 +132,10 @@ export default function Header() {
                 </a>
               </Button>
               <Button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => {
+                  scrollToSection('contact');
+                  setIsMenuOpen(false);
+                }}
                 className="w-full"
                 data-testid="button-get-started-mobile"
               >

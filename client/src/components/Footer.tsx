@@ -48,17 +48,13 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Solutions</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/services">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-services">
-                    Services
-                  </a>
+                <Link href="/services" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-services">
+                  Services
                 </Link>
               </li>
               <li>
-                <Link href="/industries">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-industries">
-                    Industries
-                  </a>
+                <Link href="/industries" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-industries">
+                  Industries
                 </Link>
               </li>
               <li>
@@ -73,10 +69,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link href="/case-studies">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-case-studies">
-                    Case Studies
-                  </a>
+                <Link href="/case-studies" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-case-studies">
+                  Case Studies
                 </Link>
               </li>
             </ul>
@@ -87,31 +81,23 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-about">
-                    About Us
-                  </a>
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-about">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/blog">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-blog">
-                    Blog
-                  </a>
+                <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-blog">
+                  Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-contact">
-                    Contact
-                  </a>
+                <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-contact">
+                  Contact
                 </Link>
               </li>
               <li>
-                <Link href="/privacy">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-privacy">
-                    Privacy Policy
-                  </a>
+                <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-privacy">
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
