@@ -1,12 +1,7 @@
 import { Shield, Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react';
+import { Link } from 'wouter';
 
 export default function Footer() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <footer className="bg-card border-t">
@@ -53,13 +48,18 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Solutions</h3>
             <ul className="space-y-3">
               <li>
-                <button
-                  onClick={() => scrollToSection('services')}
-                  className="text-sm text-muted-foreground hover:text-primary transition text-left"
-                  data-testid="link-footer-risk"
-                >
-                  Risk & Compliance
-                </button>
+                <Link href="/services">
+                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-services">
+                    Services
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/industries">
+                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-industries">
+                    Industries
+                  </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -73,22 +73,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('services')}
-                  className="text-sm text-muted-foreground hover:text-primary transition text-left"
-                  data-testid="link-footer-advisory"
-                >
-                  Advisory Services
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('services')}
-                  className="text-sm text-muted-foreground hover:text-primary transition text-left"
-                  data-testid="link-footer-resources"
-                >
-                  Resources
-                </button>
+                <Link href="/case-studies">
+                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-case-studies">
+                    Case Studies
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -98,40 +87,32 @@ export default function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <button
-                  onClick={() => scrollToSection('trust')}
-                  className="text-sm text-muted-foreground hover:text-primary transition text-left"
-                  data-testid="link-footer-about"
-                >
-                  About Us
-                </button>
+                <Link href="/about">
+                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-about">
+                    About Us
+                  </a>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('industries')}
-                  className="text-sm text-muted-foreground hover:text-primary transition text-left"
-                  data-testid="link-footer-industries"
-                >
-                  Industries
-                </button>
+                <Link href="/blog">
+                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-blog">
+                    Blog
+                  </a>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="text-sm text-muted-foreground hover:text-primary transition text-left"
-                  data-testid="link-footer-contact"
-                >
-                  Contact
-                </button>
+                <Link href="/contact">
+                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-contact">
+                    Contact
+                  </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#privacy"
-                  className="text-sm text-muted-foreground hover:text-primary transition"
-                  data-testid="link-footer-privacy"
-                >
-                  Privacy Policy
-                </a>
+                <Link href="/privacy">
+                  <a className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-privacy">
+                    Privacy Policy
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>

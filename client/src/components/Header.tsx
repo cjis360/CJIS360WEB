@@ -49,14 +49,15 @@ export default function Header() {
                 Services
               </Button>
             </Link>
-            <Button
-              variant="ghost"
-              onClick={() => scrollToSection('industries')}
-              data-testid="link-nav-industries"
-            >
-              Industries
-            </Button>
-            <Link href="/blog">
+            <Link href="/industries">
+              <Button
+                variant="ghost"
+                data-testid="link-nav-industries"
+              >
+                Industries
+              </Button>
+            </Link>
+            <Link href="/resources">
               <Button
                 variant="ghost"
                 data-testid="link-nav-resources"
@@ -64,28 +65,22 @@ export default function Header() {
                 Resources
               </Button>
             </Link>
-            <Link href="/case-studies">
+            <Link href="/about">
               <Button
                 variant="ghost"
-                data-testid="link-nav-case-studies"
+                data-testid="link-nav-about"
               >
-                Case Studies
+                About
               </Button>
             </Link>
-            <Button
-              variant="ghost"
-              onClick={() => scrollToSection('trust')}
-              data-testid="link-nav-trust"
-            >
-              Trust
-            </Button>
-            <Button
-              variant="ghost"
-              onClick={() => scrollToSection('contact')}
-              data-testid="link-nav-contact"
-            >
-              Contact
-            </Button>
+            <Link href="/contact">
+              <Button
+                variant="ghost"
+                data-testid="link-nav-contact"
+              >
+                Contact
+              </Button>
+            </Link>
           </nav>
 
           {/* CTA Buttons */}
@@ -141,15 +136,16 @@ export default function Header() {
                   Services
                 </Button>
               </Link>
-              <Button
-                variant="ghost"
-                onClick={() => scrollToSection('industries')}
-                className="justify-start"
-                data-testid="link-industries-mobile"
-              >
-                Industries
-              </Button>
-              <Link href="/blog">
+              <Link href="/industries">
+                <Button
+                  variant="ghost"
+                  className="justify-start w-full"
+                  data-testid="link-industries-mobile"
+                >
+                  Industries
+                </Button>
+              </Link>
+              <Link href="/resources">
                 <Button
                   variant="ghost"
                   className="justify-start w-full"
@@ -158,31 +154,24 @@ export default function Header() {
                   Resources
                 </Button>
               </Link>
-              <Link href="/case-studies">
+              <Link href="/about">
                 <Button
                   variant="ghost"
                   className="justify-start w-full"
-                  data-testid="link-case-studies-mobile"
+                  data-testid="link-about-mobile"
                 >
-                  Case Studies
+                  About
                 </Button>
               </Link>
-              <Button
-                variant="ghost"
-                onClick={() => scrollToSection('trust')}
-                className="justify-start"
-                data-testid="link-trust-mobile"
-              >
-                Trust
-              </Button>
-              <Button
-                variant="ghost"
-                onClick={() => scrollToSection('contact')}
-                className="justify-start"
-                data-testid="link-about-mobile"
-              >
-                Contact
-              </Button>
+              <Link href="/contact">
+                <Button
+                  variant="ghost"
+                  className="justify-start w-full"
+                  data-testid="link-contact-mobile"
+                >
+                  Contact
+                </Button>
+              </Link>
               <Button
                 variant="ghost"
                 asChild
