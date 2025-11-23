@@ -62,7 +62,7 @@ export default function Contact() {
                     <div>
                       <div className="font-semibold text-foreground mb-1">Phone</div>
                       <a
-                        href="tel:+18005551234"
+                        href="tel:+15613181952"
                         className="text-muted-foreground hover:text-primary transition"
                         data-testid="link-phone"
                       >

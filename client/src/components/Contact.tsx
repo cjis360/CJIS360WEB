@@ -47,11 +47,11 @@ export default function Contact() {
                   <div>
                     <div className="font-medium text-foreground">Phone</div>
                     <a
-                      href="tel:+18005551234"
+                      href="tel:+15613181952"
                       className="text-muted-foreground hover:text-primary transition"
                       data-testid="link-phone"
                     >
-                      (800) 555-1234
+                      (561) 318-1952
                     </a>
                   </div>
                 </div>
@@ -63,8 +63,8 @@ export default function Contact() {
                   <div>
                     <div className="font-medium text-foreground">Address</div>
                     <div className="text-muted-foreground" data-testid="text-address">
-                      123 Compliance Avenue<br />
-                      Washington, DC 20001
+                      7590 Via Luria<br />
+                      Lake Worth, FL 33467
                     </div>
                   </div>
                 </div>
