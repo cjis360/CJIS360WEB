@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Home from "@/pages/Home";
+import Services from "@/pages/Services";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import CaseStudies from "@/pages/CaseStudies";
@@ -15,6 +16,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/services" component={Services} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/case-studies" component={CaseStudies} />

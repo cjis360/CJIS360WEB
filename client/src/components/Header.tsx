@@ -41,13 +41,14 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-2">
-            <Button
-              variant="ghost"
-              onClick={() => scrollToSection('services')}
-              data-testid="link-nav-services"
-            >
-              Services
-            </Button>
+            <Link href="/services">
+              <Button
+                variant="ghost"
+                data-testid="link-nav-services"
+              >
+                Services
+              </Button>
+            </Link>
             <Button
               variant="ghost"
               onClick={() => scrollToSection('industries')}
@@ -131,14 +132,15 @@ export default function Header() {
                 <span className="text-sm font-medium text-muted-foreground">Theme</span>
                 <ThemeToggle />
               </div>
-              <Button
-                variant="ghost"
-                onClick={() => scrollToSection('services')}
-                className="justify-start"
-                data-testid="link-services-mobile"
-              >
-                Services
-              </Button>
+              <Link href="/services">
+                <Button
+                  variant="ghost"
+                  className="justify-start w-full"
+                  data-testid="link-services-mobile"
+                >
+                  Services
+                </Button>
+              </Link>
               <Button
                 variant="ghost"
                 onClick={() => scrollToSection('industries')}
@@ -147,6 +149,24 @@ export default function Header() {
               >
                 Industries
               </Button>
+              <Link href="/blog">
+                <Button
+                  variant="ghost"
+                  className="justify-start w-full"
+                  data-testid="link-resources-mobile"
+                >
+                  Resources
+                </Button>
+              </Link>
+              <Link href="/case-studies">
+                <Button
+                  variant="ghost"
+                  className="justify-start w-full"
+                  data-testid="link-case-studies-mobile"
+                >
+                  Case Studies
+                </Button>
+              </Link>
               <Button
                 variant="ghost"
                 onClick={() => scrollToSection('trust')}
