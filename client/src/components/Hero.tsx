@@ -1,5 +1,8 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import lawEnforcementAI from '@assets/cjis_stock_images6_1763930832082.jpg';
+import femaleITStaff from '@assets/cjis_stock_images8_1763930832082.jpg';
+import maleITStaff from '@assets/cjis_stock_images9_1763930832082.jpg';
 
 export default function Hero() {
   const scrollToContact = () => {
@@ -67,22 +70,22 @@ export default function Hero() {
             </style>
             <div className="absolute top-0 right-32 w-64 h-64 hexagon-clip bg-muted overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&fit=crop"
-                alt="Law enforcement officer"
+                src={lawEnforcementAI}
+                alt="Law enforcement professional with investigative AI interface"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute top-24 right-0 w-56 h-56 hexagon-clip bg-muted overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
-                alt="Compliance officer"
+                src={femaleITStaff}
+                alt="Female IT staff monitoring security systems"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute bottom-16 right-24 w-60 h-60 hexagon-clip bg-muted overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&h=400&fit=crop"
-                alt="Security professional"
+                src={maleITStaff}
+                alt="Male IT staff monitoring compliance systems"
                 className="w-full h-full object-cover"
               />
             </div>
