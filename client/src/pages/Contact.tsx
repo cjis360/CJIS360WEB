@@ -66,7 +66,7 @@ export default function Contact() {
                         className="text-muted-foreground hover:text-primary transition"
                         data-testid="link-phone"
                       >
-                        (800) 555-1234
+                        (561) 318-1952
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">Monday - Friday, 9AM - 5PM EST</p>
                     </div>
@@ -79,8 +79,9 @@ export default function Contact() {
                     <div>
                       <div className="font-semibold text-foreground mb-1">Address</div>
                       <div className="text-muted-foreground" data-testid="text-address">
-                        123 Compliance Avenue<br />
-                        Washington, DC 20001<br />
+                        CJIS360<br />
+                        7590 Via Luria<br />
+                        Lake Worth, FL 33467<br />
                         United States
                       </div>
                     </div>

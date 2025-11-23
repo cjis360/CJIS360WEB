@@ -120,18 +120,18 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" />
                 <a
-                  href="tel:+18005551234"
+                  href="tel:+15613181952"
                   className="text-sm text-muted-foreground hover:text-primary transition"
                   data-testid="link-footer-phone"
                 >
-                  (800) 555-1234
+                  (561) 318-1952
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-muted-foreground" data-testid="text-footer-address">
-                  123 Compliance Avenue<br />
-                  Washington, DC 20001
+                  7590 Via Luria<br />
+                  Lake Worth, FL 33467
                 </span>
               </li>
             </ul>
