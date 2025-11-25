@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Menu, X, Shield } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'wouter';
 import ThemeToggle from './ThemeToggle';
+import logo from '@assets/1CE97738-A759-48D2-9E68-E49CF703EC0D_1764032277108.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,14 +30,15 @@ export default function Header() {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="flex items-center gap-3 hover-elevate rounded-md px-2 py-1 -ml-2"
+            className="flex items-center hover-elevate rounded-md px-2 py-1 -ml-2"
             data-testid="button-logo"
           >
-            <Shield className="w-10 h-10 text-primary" strokeWidth={2.5} />
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground">CJIS360</span>
-              <span className="text-xs text-muted-foreground -mt-1">Compliance Solutions</span>
-            </div>
+            <img 
+              src={logo} 
+              alt="CJIS360" 
+              className="h-14 w-auto"
+              style={{ mixBlendMode: 'multiply' }}
+            />
           </button>
 
           {/* Desktop Navigation */}
