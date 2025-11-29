@@ -12,7 +12,7 @@ export default function Contact() {
             Get Started Today
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Contact us to learn how CJIS360 can help your agency achieve and maintain CJIS compliance.
+            Contact us to learn how CJIS360 Compliance Platform can help your agency achieve and maintain CJIS compliance.
           </p>
         </div>
 

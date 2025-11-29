@@ -2,10 +2,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Quote } from 'lucide-react';
 
 const stats = [
-  { value: '200+', label: 'Agencies Protected' },
-  { value: '50,000+', label: 'Assessments Completed' },
+  { value: '100+', label: 'Agencies Protected' },
+  { value: '10,000+', label: 'Assessments Completed' },
   { value: '99.9%', label: 'Compliance Rate' },
-  { value: '15+', label: 'Years Experience' },
+  { value: '25+', label: 'Years Experience' },
 ];
 
 const testimonials = [

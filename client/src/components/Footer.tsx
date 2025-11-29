@@ -141,7 +141,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            © {new Date().getFullYear()} CJIS360. All rights reserved.
+            © {new Date().getFullYear()} CJIS360 Compliance Platform. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
