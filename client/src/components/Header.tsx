@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'wouter';
 import ThemeToggle from './ThemeToggle';
-import logo from '@assets/cjis360_logo_v2_1764475799366.jpg';
+import logo from '@assets/cjis_logo_1764475872883.jpg';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
