@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'wouter';
 import ThemeToggle from './ThemeToggle';
-import logo from '@assets/1CE97738-A759-48D2-9E68-E49CF703EC0D_1764032277108.png';
+import logo from '@assets/cjis360_logo-transparent_1764473796374.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,8 +36,7 @@ export default function Header() {
             <img 
               src={logo} 
               alt="CJIS360" 
-              className="h-14 w-auto"
-              style={{ mixBlendMode: 'multiply' }}
+              className="h-12 w-auto"
             />
           </button>
 
