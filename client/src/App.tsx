@@ -11,6 +11,7 @@ import Industries from "@/pages/Industries";
 import Resources from "@/pages/Resources";
 import Contact from "@/pages/Contact";
 import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import CaseStudies from "@/pages/CaseStudies";
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/resources" component={Resources} />
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/case-studies" component={CaseStudies} />

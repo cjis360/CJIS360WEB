@@ -100,6 +100,11 @@ export default function Footer() {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-terms-company">
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -144,20 +149,20 @@ export default function Footer() {
             © {new Date().getFullYear()} CJIS360 Compliance Platform. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a
-              href="#terms"
+            <Link
+              href="/terms"
               className="text-sm text-muted-foreground hover:text-primary transition"
               data-testid="link-footer-terms"
             >
               Terms of Service
-            </a>
-            <a
-              href="#security"
+            </Link>
+            <Link
+              href="/privacy"
               className="text-sm text-muted-foreground hover:text-primary transition"
-              data-testid="link-footer-security"
+              data-testid="link-footer-privacy-bottom"
             >
-              Security
-            </a>
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>

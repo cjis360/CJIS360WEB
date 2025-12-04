@@ -6,177 +6,281 @@ export default function Privacy() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      {/* Hero Section */}
       <section className="py-24 bg-background border-b">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Privacy Policy
+            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6" data-testid="heading-privacy">
+              Global Privacy Policy
             </h1>
-            <p className="text-xl text-muted-foreground">
-              Last Updated: November 23, 2025
+            <p className="text-xl text-muted-foreground" data-testid="text-privacy-updated">
+              Last Updated: December 4, 2025
             </p>
           </div>
         </div>
       </section>
 
-      {/* Privacy Content */}
       <section className="py-24 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <div className="space-y-12">
-              {/* Introduction */}
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Introduction</h2>
+              <div className="bg-card border border-card-border rounded-md p-6">
                 <p className="text-muted-foreground leading-relaxed">
-                  CJIS360 ("we," "us," or "our") is committed to protecting the privacy and security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services, in accordance with CJIS Security Policy requirements and applicable privacy laws.
+                  This Privacy Policy explains how CJIS360 ("we," "us," "our") collects, uses, discloses, stores, transfers, and protects Personal Data when you visit CJIS360.com & CJIS360.app or use our services ("Services").
                 </p>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  This Policy is designed for compliance with:
+                </p>
+                <ul className="list-disc pl-6 space-y-1 text-muted-foreground mt-2">
+                  <li>EU GDPR & UK GDPR</li>
+                  <li>California CCPA/CPRA</li>
+                  <li>Colorado CPA</li>
+                  <li>Virginia CDPA</li>
+                  <li>Connecticut CTDPA</li>
+                  <li>Utah UCPA</li>
+                  <li>Canada PIPEDA & Quebec Law 25</li>
+                  <li>Brazil LGPD</li>
+                  <li>APEC cross-border frameworks</li>
+                </ul>
               </div>
 
-              {/* Information We Collect */}
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Information We Collect</h2>
-                <div className="space-y-4 text-muted-foreground">
+                <h2 className="text-3xl font-bold text-foreground mb-4">1. Data We Collect</h2>
+                <div className="space-y-6">
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Personal Information</h3>
-                    <p className="leading-relaxed">
-                      We may collect personal information that you provide directly to us, including:
-                    </p>
-                    <ul className="list-disc pl-6 mt-2 space-y-1">
-                      <li>Name and contact information (email, phone, address)</li>
-                      <li>Agency or organization name and details</li>
-                      <li>Professional title and role</li>
-                      <li>Information submitted through contact forms or assessment requests</li>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">1.1 Personal Data You Provide</h3>
+                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                      <li>Name, email, phone, job title</li>
+                      <li>Agency or organization details</li>
+                      <li>Training records and assessment results</li>
+                      <li>Uploaded files, notes, documentation</li>
+                      <li>Payment details (collected by secure processors)</li>
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Usage Information</h3>
-                    <p className="leading-relaxed">
-                      We automatically collect certain information about your device and usage of our website, including:
-                    </p>
-                    <ul className="list-disc pl-6 mt-2 space-y-1">
-                      <li>IP address and browser type</li>
-                      <li>Pages visited and time spent on pages</li>
-                      <li>Referring website addresses</li>
-                      <li>Device information and operating system</li>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">1.2 Data Collected Automatically</h3>
+                    <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                      <li>Log data, IP address, browser type</li>
+                      <li>Device identifiers</li>
+                      <li>Usage analytics and performance telemetry</li>
+                      <li>Cookies and tracking technologies (see Cookie Section)</li>
                     </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">1.3 Sensitive Data</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      CJIS360 does not require or permit the upload of Criminal Justice Information (CJI). If a User uploads CJI in violation of these Terms, CJIS360 may delete the data and notify the organization.
+                    </p>
                   </div>
                 </div>
               </div>
 
-              {/* How We Use Your Information */}
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">How We Use Your Information</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-4">2. Purposes for Processing</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We use the information we collect for the following purposes:
+                  We process Personal Data for:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                  <li>To provide and maintain our services</li>
-                  <li>To respond to your inquiries and service requests</li>
-                  <li>To conduct CJIS compliance assessments and provide consultation</li>
-                  <li>To send you updates, newsletters, and marketing communications (with your consent)</li>
-                  <li>To improve our website and services</li>
-                  <li>To comply with legal obligations and industry regulations</li>
-                  <li>To protect against fraudulent or illegal activity</li>
+                  <li>Account creation and authentication</li>
+                  <li>Training delivery and assessment scoring</li>
+                  <li>Compliance-readiness support</li>
+                  <li>Customer service and technical support</li>
+                  <li>Security monitoring, logging, and fraud prevention</li>
+                  <li>Platform improvement and analytics</li>
+                  <li>Billing and subscription management</li>
+                  <li>Legal obligations and auditing</li>
                 </ul>
               </div>
 
-              {/* Data Security */}
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Data Security</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-4">3. Legal Bases for Processing (GDPR)</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  As a CJIS compliance solutions provider, we implement robust security measures to protect your information, including:
+                  Depending on the processing activity, CJIS360 relies on:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                  <li>Encryption of data in transit and at rest</li>
-                  <li>Multi-factor authentication for system access</li>
-                  <li>Regular security assessments and audits</li>
-                  <li>Strict access controls and employee training</li>
-                  <li>Compliance with CJIS Security Policy requirements</li>
-                  <li>Incident response procedures and monitoring</li>
+                  <li><strong className="text-foreground">Contractual necessity</strong> (account provision, service delivery)</li>
+                  <li><strong className="text-foreground">Legitimate interests</strong> (security, fraud prevention, product improvement)</li>
+                  <li><strong className="text-foreground">Legal obligation</strong> (tax, auditing)</li>
+                  <li><strong className="text-foreground">Consent</strong> where required (cookies, marketing)</li>
                 </ul>
               </div>
 
-              {/* Information Sharing */}
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Information Sharing and Disclosure</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-4">4. Data Sharing</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We do not sell your personal information. We may share your information only in the following circumstances:
+                  We may share Personal Data with:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                  <li><strong className="text-foreground">With Your Consent:</strong> We share information when you explicitly authorize us to do so</li>
-                  <li><strong className="text-foreground">Service Providers:</strong> We may share information with trusted third-party service providers who assist in our operations, subject to confidentiality agreements</li>
-                  <li><strong className="text-foreground">Legal Requirements:</strong> We may disclose information to comply with applicable laws, regulations, legal processes, or government requests</li>
-                  <li><strong className="text-foreground">Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred</li>
+                  <li>Cloud hosting providers</li>
+                  <li>Payment processors</li>
+                  <li>Analytics tools</li>
+                  <li>Customer-authorized administrators</li>
+                  <li>Legal authorities when required</li>
+                  <li>Subprocessors listed in our DPA</li>
+                </ul>
+                <p className="text-primary font-semibold mt-4">
+                  CJIS360 never sells Personal Data.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-4">5. International Transfers</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Where data is transferred outside your region:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li>EU/UK transfers use Standard Contractual Clauses (SCCs) and UK Addendum.</li>
+                  <li>Canadian transfers follow PIPEDA/Law 25 requirements.</li>
+                  <li>Transfers to APEC economies follow CBPR principles.</li>
                 </ul>
               </div>
 
-              {/* Your Rights */}
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Your Rights and Choices</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-4">6. Retention</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  You have the following rights regarding your personal information:
+                  Unless otherwise required by contract or law, we retain Personal Data as follows:
+                </p>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="border-b border-border">
+                        <th className="text-left py-3 pr-4 text-foreground font-semibold">Data Category</th>
+                        <th className="text-left py-3 text-foreground font-semibold">Retention Period</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-muted-foreground">
+                      <tr className="border-b border-border">
+                        <td className="py-3 pr-4">Training records</td>
+                        <td className="py-3">7 years or organizational instruction</td>
+                      </tr>
+                      <tr className="border-b border-border">
+                        <td className="py-3 pr-4">Account information</td>
+                        <td className="py-3">Life of the account + 2 years</td>
+                      </tr>
+                      <tr className="border-b border-border">
+                        <td className="py-3 pr-4">Logs & telemetry</td>
+                        <td className="py-3">12–24 months</td>
+                      </tr>
+                      <tr className="border-b border-border">
+                        <td className="py-3 pr-4">Payment data</td>
+                        <td className="py-3">Per PCI-DSS and processor retention rules</td>
+                      </tr>
+                      <tr className="border-b border-border">
+                        <td className="py-3 pr-4">Support tickets</td>
+                        <td className="py-3">3 years</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 pr-4">Cookies</td>
+                        <td className="py-3">Per Cookie Policy (generally 12–24 months)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  Upon deletion requests, data is removed unless retention is legally required.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-4">7. Security</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  We implement administrative, technical, and physical safeguards, including:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                  <li><strong className="text-foreground">Access:</strong> Request access to the personal information we hold about you</li>
-                  <li><strong className="text-foreground">Correction:</strong> Request correction of inaccurate or incomplete information</li>
-                  <li><strong className="text-foreground">Deletion:</strong> Request deletion of your personal information, subject to legal retention requirements</li>
-                  <li><strong className="text-foreground">Opt-Out:</strong> Unsubscribe from marketing communications at any time</li>
-                  <li><strong className="text-foreground">Data Portability:</strong> Request a copy of your information in a structured format</li>
+                  <li>Encryption in transit and at rest</li>
+                  <li>Role-based access control</li>
+                  <li>MFA optional for all accounts</li>
+                  <li>Zero-trust network architecture</li>
+                  <li>Continuous vulnerability scanning</li>
+                  <li>Signed audit logging</li>
+                  <li>Vendor security reviews</li>
                 </ul>
               </div>
 
-              {/* Cookies */}
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Cookies and Tracking Technologies</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  We use cookies and similar tracking technologies to enhance your experience on our website. You can control cookie preferences through your browser settings. Please note that disabling cookies may limit certain features of our website.
-                </p>
-              </div>
-
-              {/* Data Retention */}
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Data Retention</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. When information is no longer needed, we securely delete or anonymize it in accordance with our data retention policies and CJIS requirements.
-                </p>
-              </div>
-
-              {/* Children's Privacy */}
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Children's Privacy</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us immediately.
-                </p>
-              </div>
-
-              {/* Changes to Policy */}
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Changes to This Privacy Policy</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated policy on our website and updating the "Last Updated" date. We encourage you to review this Privacy Policy periodically.
-                </p>
-              </div>
-
-              {/* Contact */}
-              <div>
-                <h2 className="text-3xl font-bold text-foreground mb-4">Contact Us</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-4">8. Your Rights</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  If you have questions or concerns about this Privacy Policy or our data practices, please contact us:
+                  Depending on your jurisdiction, you may have:
                 </p>
+                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li>Right to access</li>
+                  <li>Right to correct</li>
+                  <li>Right to delete</li>
+                  <li>Right to portability</li>
+                  <li>Right to restrict processing</li>
+                  <li>Right to object</li>
+                  <li>Right to opt out of sale/sharing (we do not sell data)</li>
+                  <li>Right to withdraw consent</li>
+                  <li>Right to appeal (Colorado and others)</li>
+                </ul>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  Requests can be submitted to: <a href="mailto:privacy@cjis360.com" className="text-primary hover:underline">privacy@cjis360.com</a>
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-4">9. Children's Privacy</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  The Platform is not intended for children under 18. We do not knowingly collect children's data.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-4">10. Cookie & Tracking Policy</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  We use necessary, functional, and analytics cookies. Where required by law (EU/UK, some U.S. states), we obtain consent before setting non-essential cookies.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-4">11. Data Processing Addendum</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  For GDPR-regulated customers, a DPA is available that defines:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li>Roles of Controller and Processor</li>
+                  <li>Subprocessor list</li>
+                  <li>Security controls</li>
+                  <li>Audit rights</li>
+                  <li>International transfer mechanisms</li>
+                  <li>Breach notification timelines</li>
+                  <li>Return or deletion of data</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-4">12. Breach Notification</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  We will notify affected customers of data breaches in accordance with:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                  <li>GDPR Articles 33 & 34</li>
+                  <li>CPRA breach rules</li>
+                  <li>Other applicable global regulations</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-4">13. Changes to This Policy</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  We may update this Policy periodically. Material changes will be communicated via email or platform notice.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-3xl font-bold text-foreground mb-4">14. Contact Information</h2>
                 <div className="bg-card border border-card-border rounded-md p-6 space-y-2">
-                  <p className="text-foreground"><strong>CJIS360 Compliance Solutions</strong></p>
+                  <p className="text-foreground"><strong>CJIS360 / Karambwe Cybersecurity Group, LLC</strong></p>
+                  <p className="text-muted-foreground">Privacy Office</p>
                   <p className="text-muted-foreground">7590 Via Luria<br />Lake Worth, FL 33467</p>
                   <p className="text-muted-foreground">Email: <a href="mailto:privacy@cjis360.com" className="text-primary hover:underline">privacy@cjis360.com</a></p>
                   <p className="text-muted-foreground">Phone: <a href="tel:+15613181952" className="text-primary hover:underline">(561) 318-1952</a></p>
                 </div>
               </div>
 
-              {/* CJIS Compliance Note */}
-              <div className="bg-primary/5 border border-primary/20 rounded-md p-6">
-                <h3 className="text-xl font-semibold text-foreground mb-3">CJIS Compliance Commitment</h3>
+              <div className="bg-primary/10 border border-primary/20 rounded-md p-6">
+                <h3 className="text-xl font-semibold text-foreground mb-3">Global Compliance Commitment</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  As a provider of CJIS compliance solutions, we maintain the highest standards of data protection and security. Our practices align with CJIS Security Policy requirements, including appropriate background checks for personnel with access to CJI, comprehensive security controls, and rigorous incident response procedures.
+                  This Privacy Policy is designed to meet the requirements of major global privacy frameworks including GDPR, CCPA/CPRA, and other international regulations. We are committed to protecting your personal data and providing transparency about our data practices.
                 </p>
               </div>
             </div>
