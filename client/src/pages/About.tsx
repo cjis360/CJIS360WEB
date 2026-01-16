@@ -82,19 +82,29 @@ export default function About() {
             <div>
               <h2 className="text-4xl font-bold text-foreground mb-6">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                CJIS360 exists to simplify the complex world of CJIS compliance. We believe that protecting Criminal Justice Information shouldn't be overwhelming, expensive, or uncertain.
+                CJIS360 exists to simplify the complex world of CJIS compliance. We believe that protecting Criminal Justice Information should not be overwhelming, expensive, or uncertain.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Our mission is to provide law enforcement agencies with fast, defensible CJIS 6.0 compliance through measurable controls, comprehensive evidence collection, and ongoing monitoring that makes compliance sustainable.
+                Our mission is to provide law enforcement agencies with fast, defensible criminal justice information Systems (CJI) compliance through measurable controls, comprehensive evidence collection, and ongoing monitoring that makes compliance sustainable.
+              </p>
+              <h3 className="text-xl font-semibold text-foreground mt-8 mb-4">Why CJIS Compliance Matters</h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                The FBI's CJIS Security Policy sets the standard for safeguarding Criminal Justice Information (CJI) - from criminal history and warrants to dispatch logs and biometric data - across its entire lifecycle. It applies to any organization or individual who can access, manage, store, transmit, or support CJI systems, including law enforcement departments, allied government teams, and third-party vendors who support justice systems.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                With the release of CJIS Security Policy version 6.0, effective December 27, 2024, compliance expectations have expanded significantly. Version 6.0 represents more than a refresh of language - it introduces over 180 primary security controls and more than 1,300 subcontrols that demand measurable, verifiable evidence of implementation, not just policy statements.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                This means agencies must do more than claim compliance - they must prove it through documentation, enforcement, identity and access controls, remote access safeguards, vendor accountability, and audit-ready evidence.
               </p>
               <p className="text-lg text-muted-foreground">
-                We translate CJIS 6.0's enhanced requirements around authentication, continuous monitoring, and supply chain risk management into actionable controls that agencies can deploy quickly and maintain with confidence.
+                Compliance is not just paperwork - it is about protecting sensitive criminal justice information (CJI) every day and ensuring systems, people, and processes stand up to modern cybersecurity challenges. We believe every agency deserves access to expert guidance that strengthens security, reduces risk, and prepares them for successful audits - without disrupting critical public safety work. We translate CJIS 6.0's enhanced requirements around authentication, continuous monitoring, and supply chain risk management into actionable controls that agencies can deploy quickly and maintain with confidence.
               </p>
             </div>
             <div className="space-y-4">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">200+</CardTitle>
+                  <CardTitle className="text-2xl">100+</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">Agencies protected nationwide</p>
