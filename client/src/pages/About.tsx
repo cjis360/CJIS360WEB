@@ -29,7 +29,7 @@ export default function About() {
     {
       icon: Users,
       title: 'Vendor Risk Management',
-      description: 'Comprehensive assessment and monitoring of third-party vendors handling CJI, addressing CJIS 6.0\'s enhanced supply chain security requirements.',
+      description: "Comprehensive assessment and monitoring of third-party vendors handling CJI, addressing CJIS 6.0's enhanced supply chain security requirements.",
     },
     {
       icon: Award,
@@ -85,20 +85,17 @@ export default function About() {
                 CJIS360 exists to simplify the complex world of CJIS compliance. We believe that protecting Criminal Justice Information should not be overwhelming, expensive, or uncertain.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Our mission is to provide law enforcement agencies with fast, defensible criminal justice information Systems (CJI) compliance through measurable controls, comprehensive evidence collection, and ongoing monitoring that makes compliance sustainable.
+                Our mission is to provide law enforcement agencies with fast, defensible Criminal Justice Information Systems (CJI) compliance through measurable controls, comprehensive evidence collection, and ongoing monitoring that makes compliance sustainable.
               </p>
               <h3 className="text-xl font-semibold text-foreground mt-8 mb-4">Why CJIS Compliance Matters</h3>
               <p className="text-lg text-muted-foreground mb-6">
-                The FBI's CJIS Security Policy sets the standard for safeguarding Criminal Justice Information (CJI) - from criminal history and warrants to dispatch logs and biometric data - across its entire lifecycle. It applies to any organization or individual who can access, manage, store, transmit, or support CJI systems, including law enforcement departments, allied government teams, and third-party vendors who support justice systems.
+                The FBI CJIS Security Policy sets the standard for safeguarding Criminal Justice Information (CJI) from criminal history and warrants to dispatch logs and biometric data across its entire lifecycle. It applies to any organization or individual who can access, manage, store, transmit, or support CJI systems.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                With the release of CJIS Security Policy version 6.0, effective December 27, 2024, compliance expectations have expanded significantly. Version 6.0 represents more than a refresh of language - it introduces over 180 primary security controls and more than 1,300 subcontrols that demand measurable, verifiable evidence of implementation, not just policy statements.
-              </p>
-              <p className="text-lg text-muted-foreground mb-6">
-                This means agencies must do more than claim compliance - they must prove it through documentation, enforcement, identity and access controls, remote access safeguards, vendor accountability, and audit-ready evidence.
+                With CJIS Security Policy version 6.0, effective December 27, 2024, compliance expectations have expanded significantly. Version 6.0 introduces over 180 primary security controls and more than 1,300 subcontrols that demand measurable, verifiable evidence of implementation.
               </p>
               <p className="text-lg text-muted-foreground">
-                Compliance is not just paperwork - it is about protecting sensitive criminal justice information (CJI) every day and ensuring systems, people, and processes stand up to modern cybersecurity challenges. We believe every agency deserves access to expert guidance that strengthens security, reduces risk, and prepares them for successful audits - without disrupting critical public safety work.
+                Agencies must prove compliance through documentation, enforcement, identity and access controls, remote access safeguards, vendor accountability, and audit-ready evidence.
               </p>
             </div>
             <div className="space-y-4">
@@ -150,7 +147,7 @@ export default function About() {
                 <Card
                   key={index}
                   className="hover-elevate transition-transform duration-300 hover:-translate-y-2"
-                  data-testid={`card-expertise-${index}`}
+                  data-testid={"card-expertise-" + index}
                 >
                   <CardHeader>
                     <div className="w-12 h-12 rounded-md bg-primary/10 flex items-center justify-center mb-4">
@@ -182,7 +179,7 @@ export default function About() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="text-center" data-testid={`value-${index}`}>
+              <div key={index} className="text-center" data-testid={"value-" + index}>
                 <div className="w-16 h-16 rounded-md bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">{index + 1}</span>
                 </div>
@@ -199,7 +196,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-foreground mb-6">Ready to Work Together?</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Let's discuss how CJIS360 can help your agency achieve comprehensive CJIS 6.0 compliance.
+            Let us discuss how CJIS360 can help your agency achieve comprehensive CJIS 6.0 compliance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild data-testid="button-contact-cta">
