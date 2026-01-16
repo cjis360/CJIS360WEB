@@ -98,7 +98,7 @@ export default function About() {
                 This means agencies must do more than claim compliance - they must prove it through documentation, enforcement, identity and access controls, remote access safeguards, vendor accountability, and audit-ready evidence.
               </p>
               <p className="text-lg text-muted-foreground">
-                Compliance is not just paperwork - it is about protecting sensitive criminal justice information (CJI) every day and ensuring systems, people, and processes stand up to modern cybersecurity challenges. We believe every agency deserves access to expert guidance that strengthens security, reduces risk, and prepares them for successful audits - without disrupting critical public safety work. We translate CJIS 6.0's enhanced requirements around authentication, continuous monitoring, and supply chain risk management into actionable controls that agencies can deploy quickly and maintain with confidence.
+                Compliance is not just paperwork - it is about protecting sensitive criminal justice information (CJI) every day and ensuring systems, people, and processes stand up to modern cybersecurity challenges. We believe every agency deserves access to expert guidance that strengthens security, reduces risk, and prepares them for successful audits - without disrupting critical public safety work.
               </p>
             </div>
             <div className="space-y-4">
