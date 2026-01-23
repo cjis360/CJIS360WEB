@@ -42,19 +42,19 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-2">
-            <Button variant="ghost" asChild data-testid="link-nav-services">
+            <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-services">
               <Link href="/services">Services</Link>
             </Button>
-            <Button variant="ghost" asChild data-testid="link-nav-industries">
+            <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-industries">
               <Link href="/industries">Industries</Link>
             </Button>
-            <Button variant="ghost" asChild data-testid="link-nav-resources">
+            <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-resources">
               <Link href="/resources">Resources</Link>
             </Button>
-            <Button variant="ghost" asChild data-testid="link-nav-about">
+            <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-about">
               <Link href="/about">About</Link>
             </Button>
-            <Button variant="ghost" asChild data-testid="link-nav-contact">
+            <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-contact">
               <Link href="/contact">Contact</Link>
             </Button>
           </nav>
@@ -64,6 +64,7 @@ export default function Header() {
             <ThemeToggle />
             <Button
               variant="ghost"
+              className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white"
               asChild
               data-testid="link-platform-login"
             >
@@ -88,7 +89,7 @@ export default function Header() {
             variant="ghost"
             size="icon"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden"
+            className="md:hidden text-slate-700 dark:text-slate-200"
             data-testid="button-mobile-menu"
           >
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -100,28 +101,28 @@ export default function Header() {
           <div className="md:hidden py-4 border-t bg-white dark:bg-slate-900" data-testid="mobile-menu">
             <nav className="flex flex-col gap-2">
               <div className="flex items-center justify-between mb-2 px-2">
-                <span className="text-sm font-medium text-muted-foreground">Theme</span>
+                <span className="text-sm font-medium text-slate-600 dark:text-slate-400">Theme</span>
                 <ThemeToggle />
               </div>
-              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-services-mobile">
+              <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-services-mobile">
                 <Link href="/services">Services</Link>
               </Button>
-              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-industries-mobile">
+              <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-industries-mobile">
                 <Link href="/industries">Industries</Link>
               </Button>
-              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-resources-mobile">
+              <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-resources-mobile">
                 <Link href="/resources">Resources</Link>
               </Button>
-              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-about-mobile">
+              <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-about-mobile">
                 <Link href="/about">About</Link>
               </Button>
-              <Button variant="ghost" className="justify-start w-full" asChild data-testid="link-contact-mobile">
+              <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-contact-mobile">
                 <Link href="/contact">Contact</Link>
               </Button>
               <Button
                 variant="ghost"
                 asChild
-                className="justify-start"
+                className="justify-start text-slate-700 dark:text-slate-200"
                 data-testid="link-platform-login-mobile"
               >
                 <a
