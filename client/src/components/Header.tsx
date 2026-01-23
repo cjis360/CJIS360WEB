@@ -24,7 +24,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-background border-b sticky top-0 z-50 backdrop-blur-sm bg-background/95">
+    <header className="bg-white dark:bg-slate-900 border-b sticky top-0 z-50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -97,7 +97,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t" data-testid="mobile-menu">
+          <div className="md:hidden py-4 border-t bg-white dark:bg-slate-900" data-testid="mobile-menu">
             <nav className="flex flex-col gap-2">
               <div className="flex items-center justify-between mb-2 px-2">
                 <span className="text-sm font-medium text-muted-foreground">Theme</span>
