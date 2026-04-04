@@ -2,7 +2,7 @@
 
 ## Overview
 
-CJIS360 is a marketing website for a CJIS 6.0 compliance solutions platform targeting law enforcement agencies. The site provides information about compliance services, risk assessments, advisory services, and an interactive assessment platform. The application is a full-stack React + Express application with form submission capabilities for contact inquiries.
+CJIS360 is a marketing website for a CJIS 6.0 compliance solutions platform targeting law enforcement agencies. The site provides information about compliance services, risk assessments, advisory services, and an interactive assessment platform. The application is a full-stack React + Express application with form submission capabilities for contact inquiries. The site features the proprietary Stop. Scrutinize. Verify.™ (SSV) GRC framework integrated throughout key pages.
 
 ## User Preferences
 

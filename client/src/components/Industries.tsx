@@ -24,8 +24,8 @@ const industries = [
   },
   {
     icon: Building,
-    title: 'Corrections',
-    description: 'Correctional facilities, probation departments, and rehabilitation services.',
+    title: 'Probation & Parole',
+    description: 'Probation and parole departments managing sensitive supervision data with CJI access requirements.',
   },
   {
     icon: Lock,

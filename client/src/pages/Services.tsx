@@ -1,79 +1,80 @@
-import { Shield, Search, AlertCircle, TrendingUp, Lock, Zap, FileCheck, Users, ArrowRight } from 'lucide-react';
+import { Shield, Search, AlertCircle, TrendingUp, Lock, Zap, FileCheck, Users, ArrowRight, CheckCircle } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SSVFramework from '@/components/SSVFramework';
 
 export default function Services() {
   const coreServices = [
     {
       icon: FileCheck,
-      title: 'CJIS 6.0 Assessment & Gap Analysis',
-      description: 'Comprehensive evaluation of your current security posture against CJIS 6.0 requirements. We identify gaps, prioritize risks, and provide a defensible compliance roadmap.',
-      highlights: ['Controls mapping', 'Risk scoring', 'Remediation timeline', 'Audit-ready documentation'],
+      title: 'CJIS 6.0 Interviews & Assessment',
+      description: 'Structured interviews with your IT, security, and operations staff to evaluate your real-world compliance posture. We document findings, identify gaps, and prioritize risks against CJIS 6.0 control families.',
+      highlights: ['Staff interviews & walkthroughs', 'Controls mapping', 'Risk scoring', 'Remediation timeline'],
     },
     {
-      icon: Lock,
-      title: 'Continuous Monitoring & Compliance',
-      description: 'Automated monitoring solutions that track your compliance status in real-time. Never wonder if you\'re still compliant—we provide ongoing evidence collection and alerts.',
-      highlights: ['24/7 monitoring', 'Automated evidence', 'Alert mechanisms', 'Compliance dashboard'],
-    },
-    {
-      icon: TrendingUp,
-      title: 'Vendor Risk Management',
-      description: 'Third-party systems handling CJI require scrutiny. We assess vendor security postures and help you manage supply chain risks according to CJIS 6.0 expectations.',
-      highlights: ['Vendor assessment', 'Risk categorization', 'Compliance tracking', 'Remediation support'],
+      icon: Search,
+      title: 'Gap Analysis & Risk Assessment',
+      description: 'Comprehensive evaluation of your current security posture against CJIS 6.0 requirements using the Stop. Scrutinize. Verify.™ methodology to produce a defensible compliance roadmap.',
+      highlights: ['Current-state documentation', 'Gap identification', 'Risk prioritization', 'Audit-ready deliverables'],
     },
     {
       icon: AlertCircle,
-      title: 'Policy Development & Implementation',
-      description: 'Expert guidance on creating and deploying CJIS-compliant policies. We help translate controls into actionable procedures your team can implement and maintain.',
-      highlights: ['Policy drafting', 'Control mapping', 'Implementation planning', 'Staff training'],
+      title: 'Policy Review & Development',
+      description: 'Expert review of existing policies and procedures to identify alignment gaps with CJIS 6.0 requirements. We draft, revise, and implement compliant policies your team can own and maintain.',
+      highlights: ['Policy gap review', 'Policy drafting & revision', 'Control mapping', 'Staff-ready procedures'],
+    },
+    {
+      icon: Lock,
+      title: 'Remediation Planning & Support',
+      description: 'A phased remediation plan that translates assessment findings into concrete, prioritized actions. We work alongside your team during implementation to verify controls are correctly applied.',
+      highlights: ['Phased action plans', 'Implementation guidance', 'Control verification', 'Progress tracking'],
     },
     {
       icon: Zap,
-      title: 'Incident Response & Remediation',
-      description: 'Rapid response to security incidents involving CJI. We help contain breaches, document findings, and demonstrate remediation to maintain your compliance posture.',
-      highlights: ['Incident triage', 'Containment support', 'Documentation', 'Recovery planning'],
+      title: 'Incident Response & Documentation',
+      description: 'Rapid response to security incidents involving CJI. We help contain breaches, produce required documentation, and demonstrate remediation to maintain your compliance posture post-incident.',
+      highlights: ['Incident triage', 'Containment support', 'Regulatory documentation', 'Recovery planning'],
     },
     {
       icon: Users,
       title: 'Advisory & Training Services',
-      description: 'Dedicated compliance experts available for strategic guidance, implementation support, and staff training on CJIS requirements and best practices.',
+      description: 'Dedicated compliance experts available for ongoing strategic guidance, implementation support, and staff training on CJIS requirements, policy interpretation, and best practices.',
       highlights: ['Expert consultation', 'Implementation support', 'Staff training', 'Quarterly reviews'],
     },
   ];
 
   const differentiators = [
     {
-      title: 'Fixed-Scope Assessments',
-      description: 'Clear, predictable scope eliminates scope creep. You know exactly what you\'re getting and when.',
+      title: 'Interview-Driven Assessments',
+      description: 'We go beyond checklists. Structured staff interviews surface real operational gaps that documents alone cannot reveal.',
     },
     {
-      title: 'Automation for Continuous Monitoring',
-      description: 'Move beyond annual assessments. Get real-time compliance status with automated evidence collection and gap alerts.',
-    },
-    {
-      title: 'Vendor Risk Management',
-      description: 'CJIS 6.0 emphasizes supply chain security. We help you assess and manage third-party risks systematically.',
+      title: 'Stop. Scrutinize. Verify.™ Methodology',
+      description: 'Our proprietary GRC framework provides a disciplined, repeatable path from initial evaluation to certified compliance output.',
     },
     {
       title: 'Audit-Ready Artifacts',
-      description: 'All deliverables are mapped to CJIS control families and organized for seamless FBI audits.',
+      description: 'Every deliverable — policy documents, remediation plans, assessment reports — is mapped to CJIS control families and organized for seamless FBI audits.',
+    },
+    {
+      title: 'Vendor Risk Management',
+      description: 'CJIS 6.0 emphasizes supply chain security. We help you assess and manage third-party risks systematically with documented evidence.',
     },
   ];
 
   const audiences = [
     { title: 'Local & State Law Enforcement', description: 'Police departments, sheriff\'s offices, and state agencies managing CJI systems' },
     { title: 'Prosecutors & Courts', description: 'District attorneys and court systems handling sensitive case management data' },
-    { title: 'Public Safety Agencies', description: 'Correctional facilities, emergency services, and specialized law enforcement units' },
-    { title: 'Private Vendors', description: 'Vendors providing solutions to law enforcement and CJI-handling organizations' },
+    { title: 'Public Safety Agencies', description: 'Emergency services, specialized law enforcement units, and other public safety organizations with CJI access' },
+    { title: 'Private Vendors', description: 'Technology vendors and service providers building for or supporting law enforcement agencies' },
   ];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="py-24 bg-background border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -82,7 +83,7 @@ export default function Services() {
               Complete CJIS 6.0 Compliance Solutions
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Fast, defensible CJIS 6.0 alignment with measurable controls, comprehensive evidence, and ongoing monitoring. We help law enforcement agencies and vendors translate complex CJIS requirements into actionable controls they can deploy and maintain.
+              Fast, defensible CJIS 6.0 alignment through structured interviews, comprehensive assessments, policy reviews, and hands-on remediation support. We help law enforcement agencies translate complex requirements into controls they can deploy and maintain.
             </p>
           </div>
         </div>
@@ -106,11 +107,11 @@ export default function Services() {
                   <ul className="space-y-3">
                     <li className="flex gap-3">
                       <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                      <span className="text-muted-foreground"><strong className="text-foreground">Fixed-scope assessments</strong> prevent scope creep and surprise costs</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Interview-driven assessments</strong> surface operational gaps checklists miss</span>
                     </li>
                     <li className="flex gap-3">
-                      <Zap className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                      <span className="text-muted-foreground"><strong className="text-foreground">Automated continuous monitoring</strong> replaces one-time assessments</span>
+                      <Search className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                      <span className="text-muted-foreground"><strong className="text-foreground">Proprietary SSV™ framework</strong> provides a repeatable path to certified compliance</span>
                     </li>
                     <li className="flex gap-3">
                       <TrendingUp className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
@@ -130,8 +131,11 @@ export default function Services() {
               <div className="space-y-4">
                 {audiences.map((audience, index) => (
                   <Card key={index} className="border-card-border">
-                    <CardHeader>
-                      <CardTitle className="text-xl">{audience.title}</CardTitle>
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-xl flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        {audience.title}
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">{audience.description}</p>
@@ -200,6 +204,9 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      {/* SSV Framework Section */}
+      <SSVFramework />
 
       {/* Why Choose CJIS360 */}
       <section className="py-24 bg-background border-t">

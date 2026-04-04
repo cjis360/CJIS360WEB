@@ -52,13 +52,13 @@ export default function Industries() {
     },
     {
       icon: Building,
-      title: 'Corrections',
-      description: 'Correctional facilities, probation departments, and rehabilitation services.',
+      title: 'Probation & Parole',
+      description: 'Probation and parole departments managing sensitive supervision and case data with CJI access requirements.',
       details: [
-        'Inmate management systems',
-        'Probation tracking',
-        'Facility security',
-        'Rehabilitation programs',
+        'Supervision data management',
+        'Case tracking systems',
+        'Field officer access controls',
+        'Multi-agency data sharing',
       ],
     },
     {
