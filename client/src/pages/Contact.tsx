@@ -126,7 +126,7 @@ export default function Contact() {
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span>100+ agencies served — proven track record</span>
+                      <span>Serving agencies across the 18,000 in CJIS 6.0 scope</span>
                     </li>
                   </ul>
                 </CardContent>

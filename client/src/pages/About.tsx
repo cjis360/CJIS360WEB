@@ -101,18 +101,10 @@ export default function About() {
             <div className="space-y-4">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">100+</CardTitle>
+                  <CardTitle className="text-2xl">18,000</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Agencies served nationwide</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl">5,000+</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">Compliance assessments completed</p>
+                  <p className="text-muted-foreground">Law enforcement agencies in CJIS 6.0 scope</p>
                 </CardContent>
               </Card>
               <Card>
@@ -120,7 +112,15 @@ export default function About() {
                   <CardTitle className="text-2xl">180+</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">CJIS 6.0 controls mapped and documented</p>
+                  <p className="text-muted-foreground">CJIS 6.0 primary controls mapped and documented</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-2xl">1,300+</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Policy subcontrols requiring verifiable evidence</p>
                 </CardContent>
               </Card>
             </div>
