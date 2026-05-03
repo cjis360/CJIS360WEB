@@ -21,7 +21,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/cjis360"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-md bg-muted hover-elevate flex items-center justify-center transition"
@@ -31,7 +31,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5 text-foreground" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/cjis360"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-md bg-muted hover-elevate flex items-center justify-center transition"
