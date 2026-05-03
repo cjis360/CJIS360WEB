@@ -112,11 +112,16 @@ export default function SSVFramework() {
               </div>
             ))}
 
-            <div className="pt-2">
+            <div className="pt-2 flex flex-wrap gap-3">
               <Button asChild data-testid="button-ssv-learn-more">
                 <a href="/services" className="inline-flex items-center gap-2">
-                  See How We Apply This Framework
+                  See Our Full Methodology
                   <ArrowRight size={16} />
+                </a>
+              </Button>
+              <Button variant="outline" asChild data-testid="button-ssv-contact">
+                <a href="/#contact" className="inline-flex items-center gap-2">
+                  Schedule a Free Assessment
                 </a>
               </Button>
             </div>

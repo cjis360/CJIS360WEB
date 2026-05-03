@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ShieldAlert, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import lawEnforcementAI from '@assets/cjis_stock_images6_1763930832082.jpg';
 import femaleITStaff from '@assets/cjis_stock_images8_1763930832082.jpg';
@@ -14,7 +14,6 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative bg-gradient-to-br from-background to-accent/30 pt-20 pb-32 overflow-hidden">
-      {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
@@ -22,23 +21,28 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
           <div className="max-w-xl">
+            {/* Urgency banner */}
+            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-md px-3 py-1.5 mb-6" data-testid="banner-urgency">
+              <Clock className="w-4 h-4 text-primary flex-shrink-0" />
+              <span className="text-sm font-medium text-primary">CJIS Security Policy 6.0 is now in effect — December 2024</span>
+            </div>
+
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Comprehensive CJIS 6.0
-              <span className="block text-primary mt-2">Compliance Solutions</span>
+              Is Your Agency
+              <span className="block text-primary mt-2">Actually Compliant?</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Helping law enforcement agencies achieve and maintain CJIS Security Policy compliance through expert guidance, risk assessments, and innovative technology.
+              CJIS 6.0 introduced over 180 primary controls and 1,300+ subcontrols. Most agencies believe they are compliant — until an audit proves otherwise. We find the gaps before the FBI does.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
                 onClick={scrollToContact}
                 className="text-lg gap-2"
-                data-testid="button-hero-request-demo"
+                data-testid="button-hero-assessment"
               >
-                Request a Demo
+                Schedule a Free Assessment
                 <ArrowRight size={20} />
               </Button>
               <Button
@@ -56,6 +60,18 @@ export default function Hero() {
                   Try the Platform
                 </a>
               </Button>
+            </div>
+
+            {/* Quick trust signals */}
+            <div className="mt-8 flex flex-wrap gap-6">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <ShieldAlert className="w-4 h-4 text-primary flex-shrink-0" />
+                <span>No obligation — 30-minute consultation</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <ShieldAlert className="w-4 h-4 text-primary flex-shrink-0" />
+                <span>Results within 5 business days</span>
+              </div>
             </div>
           </div>
 

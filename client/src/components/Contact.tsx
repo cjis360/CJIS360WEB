@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, CheckCircle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import ContactForm from './ContactForm';
 
@@ -6,13 +6,12 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-accent/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Get Started Today
+            Schedule Your Free Assessment
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Contact us to learn how CJIS360 Compliance Platform can help your agency achieve and maintain CJIS compliance.
+            Tell us about your agency. We'll review your situation and reach out within one business day to schedule a no-obligation 30-minute consultation.
           </p>
         </div>
 
@@ -73,25 +72,25 @@ export default function Contact() {
 
             <Card className="bg-primary/5 border-primary/20">
               <CardContent className="pt-6">
-                <h4 className="font-semibold text-foreground mb-2">
-                  Why Choose CJIS360?
+                <h4 className="font-semibold text-foreground mb-4">
+                  What to Expect
                 </h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Expert guidance from CJIS-certified professionals</span>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Response within one business day</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Proven track record with 200+ agencies</span>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>30-minute discovery call — no obligation</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Comprehensive assessment and remediation tools</span>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Preliminary compliance posture review included</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Ongoing support and compliance monitoring</span>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Customized remediation roadmap for your agency</span>
                   </li>
                 </ul>
               </CardContent>

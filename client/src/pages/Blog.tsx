@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { BookOpen, Calendar, User, ArrowRight } from "lucide-react";
 import type { BlogPost } from "@shared/schema";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -28,6 +30,7 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/10 via-primary/5 to-background py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-6xl">
@@ -147,6 +150,7 @@ export default function Blog() {
           )}
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

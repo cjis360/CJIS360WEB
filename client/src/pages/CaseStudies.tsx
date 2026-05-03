@@ -7,6 +7,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ArrowRight, Building2, TrendingUp, CheckCircle2 } from "lucide-react";
 import type { CaseStudy } from "@shared/schema";
 import { useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function CaseStudiesPage() {
   const [selectedIndustry, setSelectedIndustry] = useState<string | null>(null);
@@ -28,6 +30,7 @@ export default function CaseStudiesPage() {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-background">
+        <Header />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <Skeleton className="h-12 w-64 mx-auto mb-4" data-testid="skeleton-title" />
           <Skeleton className="h-6 w-96 mx-auto mb-12" data-testid="skeleton-subtitle" />
@@ -37,12 +40,14 @@ export default function CaseStudiesPage() {
             ))}
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       {/* Hero Section */}
       <section className="bg-primary/5 border-b py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -169,6 +174,7 @@ export default function CaseStudiesPage() {
           </Link>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

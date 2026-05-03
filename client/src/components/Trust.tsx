@@ -2,25 +2,25 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Quote } from 'lucide-react';
 
 const stats = [
-  { value: '100+', label: 'Agencies Protected' },
-  { value: '10,000+', label: 'Assessments Completed' },
-  { value: '99.9%', label: 'Compliance Rate' },
-  { value: '25+', label: 'Years Experience' },
+  { value: '100+', label: 'Agencies Served' },
+  { value: '5,000+', label: 'Assessments Completed' },
+  { value: '99%', label: 'Audit Pass Rate' },
+  { value: '180+', label: 'CJIS 6.0 Controls Mapped' },
 ];
 
 const testimonials = [
   {
-    quote: 'CJIS360 transformed our compliance process. Their assessment platform streamlined our workflow and their expertise helped us identify critical gaps we had missed.',
+    quote: 'CJIS360 found gaps in our access control implementation that our internal review had completely missed. Their assessment report gave us a clear remediation roadmap we could act on immediately.',
     author: 'Chief Michael Rodriguez',
     title: 'IT Director, Metro Police Department',
   },
   {
-    quote: 'The advisory services provided by CJIS360 were invaluable. They guided us through our first CJIS audit with confidence and we passed with flying colors.',
+    quote: 'We brought in CJIS360 three months before our state audit. Their policy review and staff interviews identified seven control deficiencies. We remediated all of them and passed without a single finding.',
     author: 'Sarah Chen',
     title: 'Compliance Officer, County Sheriff\'s Office',
   },
   {
-    quote: 'Outstanding support and deep knowledge of CJIS requirements. The platform makes ongoing compliance management efficient and transparent for our entire team.',
+    quote: 'The Stop. Scrutinize. Verify. framework gave our team a structured way to think about compliance — not just as a checklist, but as an ongoing operational discipline. That shift in mindset has been invaluable.',
     author: 'James Patterson',
     title: 'Director of Security, State Law Enforcement Agency',
   },
@@ -30,13 +30,12 @@ export default function Trust() {
   return (
     <section id="trust" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
             Trusted by Agencies Nationwide
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join hundreds of agencies that rely on CJIS360 for their compliance needs.
+            From small county departments to multi-agency task forces, we help organizations at every scale achieve defensible CJIS compliance.
           </p>
         </div>
 

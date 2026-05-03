@@ -104,12 +104,12 @@ export default function About() {
                   <CardTitle className="text-2xl">100+</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Agencies protected nationwide</p>
+                  <p className="text-muted-foreground">Agencies served nationwide</p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">50,000+</CardTitle>
+                  <CardTitle className="text-2xl">5,000+</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">Compliance assessments completed</p>
@@ -117,10 +117,10 @@ export default function About() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl">99.9%</CardTitle>
+                  <CardTitle className="text-2xl">180+</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Compliance success rate</p>
+                  <p className="text-muted-foreground">CJIS 6.0 controls mapped and documented</p>
                 </CardContent>
               </Card>
             </div>
