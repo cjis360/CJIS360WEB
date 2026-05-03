@@ -5,7 +5,7 @@ const stats = [
   { value: '18,000', label: 'Agencies in CJIS 6.0 Scope' },
   { value: '25+', label: 'Agencies Engaged' },
   { value: '180+', label: 'CJIS 6.0 Controls Mapped' },
-  { value: '1,300+', label: 'Policy Subcontrols Covered' },
+  { value: '1,300+', label: 'Policy Subcontrols in Scope' },
 ];
 
 const testimonials = [
