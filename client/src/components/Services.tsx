@@ -6,7 +6,7 @@ const services = [
   {
     icon: Shield,
     title: 'Risk & Compliance',
-    description: 'Comprehensive CJIS Security Policy assessments, gap analysis, and remediation planning tailored to your agency.',
+    description: 'CJIS Security Policy assessments, gap analysis, and remediation planning built around your agency\'s specific environment.',
     link: '#risk-compliance',
     external: false,
   },
@@ -20,7 +20,7 @@ const services = [
   {
     icon: Lightbulb,
     title: 'Advisory Services',
-    description: 'Expert consultation on CJIS compliance strategies, policy development, and security best practices implementation.',
+    description: 'Practical guidance on CJIS compliance strategy, policy development, and security requirements — from interpretation to implementation.',
     link: '#advisory',
     external: false,
   },
@@ -43,7 +43,7 @@ export default function Services() {
             Complete CJIS Compliance Solutions
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            End-to-end services to help your agency achieve and maintain compliance with CJIS Security Policy requirements.
+            Everything your agency needs to meet and hold CJIS Security Policy requirements.
           </p>
         </div>
 

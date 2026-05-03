@@ -86,7 +86,7 @@ export default function Industries() {
               Industries We Serve
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Specialized CJIS compliance solutions for organizations across the criminal justice ecosystem. We understand your unique challenges and regulatory requirements.
+              CJIS compliance for every sector in the criminal justice system. We know your environment and what the policy actually requires.
             </p>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function Industries() {
               Industry-Specific Expertise
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Every sector handling CJI faces unique compliance challenges. Our tailored approach addresses your specific needs.
+              Every sector handling CJI faces different compliance challenges. We adapt our process to your systems and workflows.
             </p>
           </div>
 
@@ -161,7 +161,7 @@ export default function Industries() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  We customize our approach based on your industry's specific systems, workflows, and regulatory requirements.
+                  We adapt our process to your systems, your workflows, and the specific CJIS controls that apply to your sector.
                 </p>
               </CardContent>
             </Card>
@@ -171,7 +171,7 @@ export default function Industries() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Our team has successfully guided 200+ organizations across all criminal justice sectors to CJIS compliance.
+                  Our team has worked with agencies across law enforcement, courts, probation, and technology vendor sectors.
                 </p>
               </CardContent>
             </Card>
@@ -181,7 +181,7 @@ export default function Industries() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Continuous monitoring and support ensures your organization maintains compliance as regulations evolve.
+                  We stay engaged after the assessment, supporting your compliance posture as the policy changes.
                 </p>
               </CardContent>
             </Card>
@@ -194,7 +194,7 @@ export default function Industries() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-foreground mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Contact us to discuss your industry-specific compliance needs and get a customized solution.
+            Tell us which sector you're in and we'll walk through what CJIS compliance means for your organization.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild data-testid="button-contact-cta">

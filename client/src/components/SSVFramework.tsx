@@ -10,7 +10,7 @@ const phases = [
     borderColor: 'border-red-200 dark:border-red-800',
     headline: 'Validation of Request Parameters',
     description:
-      'Upon any initial request or event — such as an access attempt or data movement — the process pauses for a cautionary check. We assess urgency and legitimacy, identify red flags, and enforce CJIS 6.0 access control requirements at the perimeter.',
+      'At the point of any access attempt or data movement, we pause and evaluate. We check legitimacy, flag anomalies, and apply CJIS 6.0 access controls before the request proceeds.',
     tasks: [
       'Assess urgency and legitimacy of the request',
       'Identify contextual anomalies and red flags',
@@ -24,7 +24,7 @@ const phases = [
     borderColor: 'border-amber-200 dark:border-amber-800',
     headline: 'Deep Analysis & Risk Assessment',
     description:
-      'A technical deep-dive using NIST RMF 800-37 guidance to analyze the process flow. We validate source integrity, map data connections to internal systems, and evaluate each request against applicable regulations including CJIS, CCPA/CPRA, and HIPAA.',
+      'A technical review grounded in NIST RMF 800-37. We validate source integrity, map data flows to internal systems, and measure each request against CJIS, CCPA/CPRA, and HIPAA requirements.',
     tasks: [
       'Validate data source integrity and authentication',
       'Map connections and visualize data interactions',
@@ -38,7 +38,7 @@ const phases = [
     borderColor: 'border-emerald-200 dark:border-emerald-800',
     headline: 'Global Compliance Certification',
     description:
-      'Transition from assessment to a "Compliance Approved" certified output. We cross-reference against ISO 27001, PCI-DSS, and SOX requirements, then generate the formal documentation and verified reports required for FBI CJIS regulatory audits.',
+      'Assessment findings become a formal "Compliance Approved" output. We cross-reference ISO 27001, PCI-DSS, and SOX, then produce the documentation required for FBI CJIS audits.',
     tasks: [
       'Cross-standard verification across frameworks',
       'Generate certified compliance documentation',
@@ -59,7 +59,7 @@ export default function SSVFramework() {
             The Stop. Scrutinize. Verify.™ Framework
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A rigorous GRC methodology engineered for high-stakes data environments like CJIS 6.0. By integrating NIST 800-37, HIPAA, and GDPR standards, we transition organizations from passive security awareness to active, documented compliance certification.
+            A structured GRC methodology built for CJIS 6.0. We apply NIST 800-37, HIPAA, and GDPR standards to take agencies from initial review to documented, certified compliance.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function SSVFramework() {
               data-testid="img-ssv-framework"
             />
             <p className="text-sm text-muted-foreground text-center max-w-sm">
-              The SSV™ framework serves as the logic engine behind every CJIS360 assessment, providing a standardized path from initial review to certified compliance output.
+              The SSV™ framework drives every CJIS360 assessment — from first review to certified compliance output.
             </p>
           </div>
 

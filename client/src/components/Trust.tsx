@@ -35,7 +35,7 @@ export default function Trust() {
             Trusted by Agencies Nationwide
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From small county departments to multi-agency task forces, we help organizations at every scale achieve defensible CJIS compliance.
+            From small county departments to multi-agency task forces — agencies at every scale.
           </p>
         </div>
 

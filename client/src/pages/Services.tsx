@@ -16,7 +16,7 @@ export default function Services() {
     {
       icon: Search,
       title: 'Gap Analysis & Risk Assessment',
-      description: 'Comprehensive evaluation of your current security posture against CJIS 6.0 requirements using the Stop. Scrutinize. Verify.™ methodology to produce a defensible compliance roadmap.',
+      description: 'Evaluation of your current security posture against CJIS 6.0 requirements, using the SSV™ methodology to produce a compliance roadmap your agency can stand behind.',
       highlights: ['Current-state documentation', 'Gap identification', 'Risk prioritization', 'Audit-ready deliverables'],
     },
     {
@@ -28,7 +28,7 @@ export default function Services() {
     {
       icon: Lock,
       title: 'Remediation Planning & Support',
-      description: 'A phased remediation plan that translates assessment findings into concrete, prioritized actions. We work alongside your team during implementation to verify controls are correctly applied.',
+      description: 'A phased plan that turns assessment findings into concrete, prioritized actions. We work with your team during implementation to make sure controls are applied correctly.',
       highlights: ['Phased action plans', 'Implementation guidance', 'Control verification', 'Progress tracking'],
     },
     {
@@ -40,7 +40,7 @@ export default function Services() {
     {
       icon: Users,
       title: 'Advisory & Training Services',
-      description: 'Dedicated compliance experts available for ongoing strategic guidance, implementation support, and staff training on CJIS requirements, policy interpretation, and best practices.',
+      description: 'Compliance experts available for guidance, implementation support, and staff training on CJIS requirements and policy interpretation.',
       highlights: ['Expert consultation', 'Implementation support', 'Staff training', 'Quarterly reviews'],
     },
   ];
@@ -56,7 +56,7 @@ export default function Services() {
     },
     {
       title: 'Audit-Ready Artifacts',
-      description: 'Every deliverable — policy documents, remediation plans, assessment reports — is mapped to CJIS control families and organized for seamless FBI audits.',
+      description: 'Every deliverable — policy documents, remediation plans, assessment reports — maps to CJIS control families and is organized for FBI audits.',
     },
     {
       title: 'Vendor Risk Management',
@@ -83,7 +83,7 @@ export default function Services() {
               Complete CJIS 6.0 Compliance Solutions
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Fast, defensible CJIS 6.0 alignment through structured interviews, comprehensive assessments, policy reviews, and hands-on remediation support. We help law enforcement agencies translate complex requirements into controls they can deploy and maintain.
+              CJIS 6.0 compliance through structured interviews, gap assessments, policy reviews, and hands-on remediation support. We help agencies turn complex requirements into controls they can actually deploy.
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Services() {
                 <div>
                   <h3 className="text-2xl font-semibold text-foreground mb-3">Core Value Proposition</h3>
                   <p className="text-lg text-muted-foreground">
-                    CJIS 6.0 raises expectations across authentication, continuous monitoring, and supply chain risk management. We translate these updates into controls and documentation that agencies can deploy quickly, with measurable progress toward full compliance.
+                    CJIS 6.0 raises the bar on authentication, continuous monitoring, and supply chain risk. We turn those requirements into controls and documentation agencies can deploy quickly, with measurable progress at every step.
                   </p>
                 </div>
                 <div>
@@ -154,7 +154,7 @@ export default function Services() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">Core Service Offerings</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive solutions to help you achieve and maintain CJIS 6.0 compliance
+              Everything your agency needs to get and stay CJIS 6.0 compliant.
             </p>
           </div>
 
@@ -235,7 +235,7 @@ export default function Services() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-foreground mb-6">Ready to Achieve CJIS 6.0 Compliance?</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Contact our compliance experts to discuss your specific needs and get a customized compliance roadmap.
+            Talk to our team about your agency's needs and we'll put together a clear compliance roadmap.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild data-testid="button-contact-cta">

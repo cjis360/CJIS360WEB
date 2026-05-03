@@ -44,7 +44,7 @@ export default function Industries() {
             Industries We Serve
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Specialized compliance solutions for organizations across the criminal justice ecosystem.
+            CJIS compliance for every sector in the criminal justice system.
           </p>
         </div>
 

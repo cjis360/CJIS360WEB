@@ -92,7 +92,7 @@ export default function Resources() {
               Featured Topics
             </h2>
             <p className="text-xl text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-              Explore our comprehensive coverage of critical CJIS compliance areas
+              Explore our coverage of the CJIS compliance areas that matter most
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {topics.map((topic, index) => (

@@ -137,7 +137,7 @@ export default function BlogPostPage() {
                 Need Help with CJIS Compliance?
               </h3>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Our team of experts can help your agency achieve and maintain full CJIS compliance.
+                Our team can help your agency get CJIS 6.0 compliant and stay that way.
                 Schedule a consultation today.
               </p>
               <Link href="/#contact">

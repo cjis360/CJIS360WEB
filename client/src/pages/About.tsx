@@ -9,39 +9,39 @@ export default function About() {
     {
       icon: Shield,
       title: 'CJI & CJIS Policy Expertise',
-      description: 'Deep understanding of Criminal Justice Information systems and comprehensive knowledge of CJIS Security Policy requirements across all versions.',
+      description: 'Direct knowledge of CJI systems and CJIS Security Policy requirements across all policy versions.',
     },
     {
       icon: CheckCircle,
       title: 'Controls Implementation',
-      description: 'Expert implementation of technical, administrative, and physical controls mapped to CJIS policy areas and security control families.',
+      description: 'Technical, administrative, and physical control implementation mapped to CJIS policy areas and control families.',
     },
     {
       icon: Zap,
       title: 'Incident Response',
-      description: 'Rapid response capabilities for security incidents involving CJI, including containment, remediation, and documentation support.',
+      description: 'Response to security incidents involving CJI — containment, remediation, and required documentation.',
     },
     {
       icon: Target,
       title: 'Access Control & Authentication',
-      description: 'Specialized expertise in advanced authentication requirements, multi-factor authentication, and identity management for CJIS 6.0 compliance.',
+      description: 'Advanced authentication, MFA, and identity management scoped to CJIS 6.0 requirements.',
     },
     {
       icon: Users,
       title: 'Vendor Risk Management',
-      description: "Comprehensive assessment and monitoring of third-party vendors handling CJI, addressing CJIS 6.0's enhanced supply chain security requirements.",
+      description: "Assessment and monitoring of third-party vendors that handle CJI, aligned to CJIS 6.0's supply chain security requirements.",
     },
     {
       icon: Award,
       title: 'Audit & Compliance',
-      description: 'FBI CJIS audit preparation, ongoing compliance monitoring, and evidence collection to ensure continuous regulatory readiness.',
+      description: 'FBI audit preparation, compliance monitoring, and evidence collection to keep your agency audit-ready.',
     },
   ];
 
   const values = [
     {
       title: 'Expertise',
-      description: 'Our team comprises CJIS-certified professionals with extensive law enforcement and compliance experience.',
+      description: 'Our team includes CJIS-certified professionals with hands-on law enforcement and compliance experience.',
     },
     {
       title: 'Transparency',
@@ -49,11 +49,11 @@ export default function About() {
     },
     {
       title: 'Partnership',
-      description: 'We work alongside your team as trusted advisors, not just consultants, to achieve lasting compliance.',
+      description: 'We work alongside your team to build compliance that holds up — not just passes the next audit.',
     },
     {
       title: 'Innovation',
-      description: 'Leveraging automation and modern tools to make compliance efficient, measurable, and sustainable.',
+      description: 'We use automation and modern tools to make compliance measurable and repeatable.',
     },
   ];
 
@@ -69,7 +69,7 @@ export default function About() {
               About CJIS360
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              We are compliance experts dedicated to helping law enforcement agencies and public safety organizations achieve and maintain CJIS 6.0 compliance with confidence and efficiency.
+              We help law enforcement agencies and public safety organizations get CJIS 6.0 compliant — and stay that way.
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function About() {
                 CJIS360 exists to simplify the complex world of CJIS compliance. We believe that protecting Criminal Justice Information should not be overwhelming, expensive, or uncertain.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                Our mission is to provide law enforcement agencies with fast, defensible Criminal Justice Information Systems (CJI) compliance through measurable controls, comprehensive evidence collection, and ongoing monitoring that makes compliance sustainable.
+                We give law enforcement agencies a clear path to defensible CJIS compliance — measurable controls, thorough evidence collection, and monitoring that keeps agencies compliant over time.
               </p>
               <h3 className="text-xl font-semibold text-foreground mt-8 mb-4">Why CJIS Compliance Matters</h3>
               <p className="text-lg text-muted-foreground mb-6">
@@ -136,7 +136,7 @@ export default function About() {
               Team Expertise
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our team brings deep expertise across all areas of CJIS compliance, from policy interpretation to technical implementation and ongoing monitoring.
+              Our team covers every area of CJIS compliance — policy interpretation, technical implementation, and ongoing monitoring.
             </p>
           </div>
 
@@ -196,7 +196,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-foreground mb-6">Ready to Work Together?</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Let us discuss how CJIS360 can help your agency achieve comprehensive CJIS 6.0 compliance.
+            Let's talk about what CJIS 6.0 compliance looks like for your agency.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild data-testid="button-contact-cta">
