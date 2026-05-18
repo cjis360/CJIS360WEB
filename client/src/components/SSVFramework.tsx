@@ -93,15 +93,15 @@ export default function SSVFramework() {
                     <p className={`text-xs font-bold uppercase tracking-wider mb-1 ${phase.color}`}>
                       {phase.step}
                     </p>
-                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                    <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">
                       {phase.headline}
                     </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                    <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed mb-3">
                       {phase.description}
                     </p>
                     <ul className="space-y-1">
                       {phase.tasks.map((task, tIdx) => (
-                        <li key={tIdx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <li key={tIdx} className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400">
                           <span className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 bg-current ${phase.color}`} />
                           {task}
                         </li>
