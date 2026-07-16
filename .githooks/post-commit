@@ -1,0 +1,10 @@
+#!/bin/bash
+# Post-commit hook: automatically push to GitHub backup after every commit.
+# Requires the GITHUB_PAT environment variable (set as a Replit secret).
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+SYNC_SCRIPT="${REPO_ROOT}/scripts/sync-github.sh"
+
+if [ -f "$SYNC_SCRIPT" ]; then
+  bash "$SYNC_SCRIPT" || true
+fi
