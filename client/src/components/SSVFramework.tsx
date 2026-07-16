@@ -36,9 +36,9 @@ const phases = [
     color: 'text-emerald-600 dark:text-emerald-400',
     bgColor: 'bg-emerald-50 dark:bg-emerald-950/30',
     borderColor: 'border-emerald-200 dark:border-emerald-800',
-    headline: 'Verification and Reporting',
+    headline: 'Verified Against Global Standards',
     description:
-      'Assessment findings are documented in a comprehensive verification report. We cross-reference ISO 27001, PCI-DSS, and SOX frameworks to produce defensible compliance documentation your agency can use to prepare for CJIS audits.',
+      'Assessment findings are documented in a comprehensive verification report. We cross-reference ISO 27001, PCI-DSS, and SOX frameworks, verifying each control against these global standards to produce defensible compliance documentation your agency can use to prepare for CJIS audits.',
     tasks: [
       'Cross-standard verification across frameworks',
       'Generate defensible compliance documentation',
