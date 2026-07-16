@@ -55,8 +55,19 @@ export default function CaseStudiesPage() {
             Success Stories
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="page-subtitle">
-            Real-world results from law enforcement agencies that trust CJIS360 for their compliance needs
+            Illustrative program profiles showing how law enforcement agencies address common CJIS compliance challenges
           </p>
+        </div>
+      </section>
+
+      {/* Disclaimer Section */}
+      <section className="border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="bg-muted border rounded-lg p-6" data-testid="disclaimer-section">
+            <p className="text-sm text-muted-foreground">
+              <strong>Note:</strong> The scenarios below are illustrative program profiles based on common agency challenges. They do not represent named, verified customers. Real customer case studies will be published only with written customer approval.
+            </p>
+          </div>
         </div>
       </section>
 

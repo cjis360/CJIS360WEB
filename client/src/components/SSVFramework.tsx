@@ -36,12 +36,12 @@ const phases = [
     color: 'text-emerald-600 dark:text-emerald-400',
     bgColor: 'bg-emerald-50 dark:bg-emerald-950/30',
     borderColor: 'border-emerald-200 dark:border-emerald-800',
-    headline: 'Global Compliance Certification',
+    headline: 'Verified Against Global Standards',
     description:
-      'Assessment findings become a formal "Compliance Approved" output. We cross-reference ISO 27001, PCI-DSS, and SOX, then produce the documentation required for FBI CJIS audits.',
+      'Assessment findings are documented in a comprehensive verification report. We cross-reference ISO 27001, PCI-DSS, and SOX frameworks, verifying each control against these global standards to produce defensible compliance documentation your agency can use to prepare for CJIS audits.',
     tasks: [
       'Cross-standard verification across frameworks',
-      'Generate certified compliance documentation',
+      'Generate defensible compliance documentation',
       'Produce immutable, audit-ready records',
     ],
   },
@@ -59,7 +59,7 @@ export default function SSVFramework() {
             The Stop. Scrutinize. Verify.™ Framework
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A structured GRC methodology built for CJIS 6.0. We apply NIST 800-37, HIPAA, and GDPR standards to take agencies from initial review to documented, certified compliance.
+            A structured GRC methodology built for CJIS 6.0. We apply NIST 800-37, HIPAA, and GDPR standards to take agencies from initial review to defensible, audit-ready compliance documentation.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function SSVFramework() {
               data-testid="img-ssv-framework"
             />
             <p className="text-sm text-muted-foreground text-center max-w-sm">
-              The SSV™ framework drives every CJIS360 assessment — from first review to certified compliance output.
+              The SSV™ framework drives every CJIS360 assessment — from first review to defensible, audit-ready compliance output.
             </p>
           </div>
 

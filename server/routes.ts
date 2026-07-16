@@ -1,15 +1,52 @@
-import type { Express } from "express";
+import type { Express, Request, Response, NextFunction } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSubmissionSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
 import { sendContactNotification } from "./lib/resend";
 
+const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
+const RATE_LIMIT_MAX_REQUESTS = 5;
+const submissionsByIp = new Map<string, number[]>();
+
+function contactRateLimit(req: Request, res: Response, next: NextFunction) {
+  const ip = req.ip || "unknown";
+  const now = Date.now();
+  const recent = (submissionsByIp.get(ip) || []).filter(
+    (timestamp) => now - timestamp < RATE_LIMIT_WINDOW_MS
+  );
+
+  if (recent.length >= RATE_LIMIT_MAX_REQUESTS) {
+    res.status(429).json({
+      success: false,
+      message: "Too many submissions. Please try again later.",
+    });
+    return;
+  }
+
+  recent.push(now);
+  submissionsByIp.set(ip, recent);
+  next();
+}
+
 export async function registerRoutes(app: Express): Promise<Server> {
+  app.set("trust proxy", 1);
+
   // Contact form submission endpoint
-  app.post("/api/contact", async (req, res) => {
+  app.post("/api/contact", contactRateLimit, async (req, res) => {
     try {
-      const validatedData = insertContactSubmissionSchema.parse(req.body);
+      // Honeypot field: real users never populate this hidden input.
+      if (typeof req.body?.website === "string" && req.body.website.length > 0) {
+        res.json({
+          success: true,
+          message: "Contact form submitted successfully",
+          id: "0",
+        });
+        return;
+      }
+
+      const { website, ...contactFields } = req.body ?? {};
+      const validatedData = insertContactSubmissionSchema.parse(contactFields);
       const submission = await storage.createContactSubmission(validatedData);
 
       // Send email notification (don't wait for it to complete)
@@ -23,11 +60,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         console.error("Failed to send email notification:", error);
       });
 
-      console.log("Contact submission received:", {
-        id: submission.id,
-        email: submission.email,
-        agencyName: submission.agencyName,
-      });
+      console.log("Contact submission received:", { id: submission.id });
 
       res.json({
         success: true,
@@ -42,26 +75,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
           message: validationError.message,
         });
       } else {
-        console.error("Error submitting contact form:", error);
+        console.error("Error submitting contact form:", error.name || error);
         res.status(500).json({
           success: false,
           message: "Failed to submit contact form",
         });
       }
-    }
-  });
-
-  // Get all contact submissions (for admin purposes)
-  app.get("/api/contact", async (req, res) => {
-    try {
-      const submissions = await storage.getAllContactSubmissions();
-      res.json(submissions);
-    } catch (error) {
-      console.error("Error fetching contact submissions:", error);
-      res.status(500).json({
-        success: false,
-        message: "Failed to fetch contact submissions",
-      });
     }
   });
 

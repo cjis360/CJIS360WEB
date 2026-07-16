@@ -52,7 +52,7 @@ export default function Services() {
     },
     {
       title: 'Stop. Scrutinize. Verify.™ Methodology',
-      description: 'Our proprietary GRC framework provides a disciplined, repeatable path from initial evaluation to certified compliance output.',
+      description: 'Our proprietary GRC framework provides a disciplined, repeatable path from initial evaluation to defensible, audit-ready compliance documentation.',
     },
     {
       title: 'Audit-Ready Artifacts',
@@ -111,7 +111,7 @@ export default function Services() {
                     </li>
                     <li className="flex gap-3">
                       <Search className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                      <span className="text-muted-foreground"><strong className="text-foreground">Proprietary SSV™ framework</strong> provides a repeatable path to certified compliance</span>
+                      <span className="text-muted-foreground"><strong className="text-foreground">Proprietary SSV™ framework</strong> provides a repeatable path to defensible compliance documentation</span>
                     </li>
                     <li className="flex gap-3">
                       <TrendingUp className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
