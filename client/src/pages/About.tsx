@@ -41,7 +41,7 @@ export default function About() {
   const values = [
     {
       title: 'Expertise',
-      description: 'Our team includes CJIS-certified professionals with hands-on law enforcement and compliance experience.',
+      description: 'Our team includes compliance and security professionals with hands-on CJIS Security Policy and law enforcement experience.',
     },
     {
       title: 'Transparency',

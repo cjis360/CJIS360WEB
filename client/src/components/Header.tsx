@@ -42,14 +42,20 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-2">
+            <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-platform">
+              <Link href="/platform">Platform</Link>
+            </Button>
             <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-services">
               <Link href="/services">Services</Link>
             </Button>
             <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-industries">
-              <Link href="/industries">Industries</Link>
+              <Link href="/industries">Solutions</Link>
             </Button>
             <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-resources">
               <Link href="/resources">Resources</Link>
+            </Button>
+            <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-trust-center">
+              <Link href="/trust-center">Trust Center</Link>
             </Button>
             <Button variant="ghost" className="text-slate-700 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white" asChild data-testid="link-nav-about">
               <Link href="/about">About</Link>
@@ -80,7 +86,7 @@ export default function Header() {
               onClick={() => scrollToSection('contact')}
               data-testid="button-get-started"
             >
-              Get Started
+              Request a Demo
             </Button>
           </div>
 
@@ -104,14 +110,20 @@ export default function Header() {
                 <span className="text-sm font-medium text-slate-600 dark:text-slate-400">Theme</span>
                 <ThemeToggle />
               </div>
+              <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-platform-mobile">
+                <Link href="/platform">Platform</Link>
+              </Button>
               <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-services-mobile">
                 <Link href="/services">Services</Link>
               </Button>
               <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-industries-mobile">
-                <Link href="/industries">Industries</Link>
+                <Link href="/industries">Solutions</Link>
               </Button>
               <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-resources-mobile">
                 <Link href="/resources">Resources</Link>
+              </Button>
+              <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-trust-center-mobile">
+                <Link href="/trust-center">Trust Center</Link>
               </Button>
               <Button variant="ghost" className="justify-start w-full text-slate-700 dark:text-slate-200" asChild data-testid="link-about-mobile">
                 <Link href="/about">About</Link>
@@ -141,7 +153,7 @@ export default function Header() {
                 className="w-full"
                 data-testid="button-get-started-mobile"
               >
-                Get Started
+                Request a Demo
               </Button>
             </nav>
           </div>

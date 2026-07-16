@@ -97,7 +97,7 @@ export default function TrustCenter() {
     {
       icon: Shield,
       title: 'Vulnerability Disclosure Policy',
-      description: 'Security researchers can report vulnerabilities to security@cjis360.com. A formal vulnerability disclosure policy is in development.',
+      description: 'Security researchers can report vulnerabilities to contact@cjis360.com. A formal vulnerability disclosure policy is in development.',
       color: 'text-amber-600',
     },
     {
@@ -152,7 +152,7 @@ export default function TrustCenter() {
             data-testid="callout-security-warning"
           >
             <AlertTriangle className="w-6 h-6 text-amber-600 dark:text-amber-500 flex-shrink-0 mt-0.5" strokeWidth={2} />
-            <div className="text-foreground leading-relaxed">
+            <div className="text-amber-900 dark:text-amber-100 leading-relaxed">
               <p className="font-semibold mb-2">Do not submit Criminal Justice Information, criminal-history records, case details, passwords, credentials, or sensitive system information through this public website.</p>
             </div>
           </div>

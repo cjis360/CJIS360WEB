@@ -16,6 +16,8 @@ import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import CaseStudies from "@/pages/CaseStudies";
 import CaseStudyDetail from "@/pages/CaseStudyDetail";
+import Platform from "@/pages/Platform";
+import TrustCenter from "@/pages/TrustCenter";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -33,6 +35,8 @@ function Router() {
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/case-studies" component={CaseStudies} />
       <Route path="/case-studies/:slug" component={CaseStudyDetail} />
+      <Route path="/platform" component={Platform} />
+      <Route path="/trust-center" component={TrustCenter} />
       <Route component={NotFound} />
     </Switch>
   );

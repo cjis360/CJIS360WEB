@@ -124,10 +124,6 @@ export default function Contact() {
                       <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                       <span>Customized remediation roadmap for your agency</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span>25+ agencies engaged — growing track record</span>
-                    </li>
                   </ul>
                 </CardContent>
               </Card>

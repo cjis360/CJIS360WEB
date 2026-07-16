@@ -52,10 +52,11 @@ export default function Trust() {
               <p className="text-foreground leading-relaxed mb-4">
                 For detailed information about CJIS360's security practices, privacy commitments, and compliance documentation, visit our Trust Center.
               </p>
-              <Link href="/trust-center">
-                <a className="inline-block px-6 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">
-                  Visit the Trust Center
-                </a>
+              <Link
+                href="/trust-center"
+                className="inline-block px-6 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors"
+              >
+                Visit the Trust Center
               </Link>
             </CardContent>
           </Card>
@@ -65,7 +66,7 @@ export default function Trust() {
             className="border border-yellow-600/30 bg-yellow-50 dark:bg-yellow-950/20 rounded-lg p-6"
             data-testid="compliance-disclaimer"
           >
-            <p className="text-sm text-foreground leading-relaxed">
+            <p className="text-sm text-amber-900 dark:text-amber-100 leading-relaxed">
               CJIS360 provides software and professional services that support customer alignment with applicable CJIS Security Policy requirements. Use of CJIS360 does not itself constitute FBI, state CJIS Systems Agency, auditor, or third-party certification. The customer remains responsible for determining applicability, implementing required safeguards, and satisfying state-specific requirements.
             </p>
           </div>

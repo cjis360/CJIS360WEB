@@ -58,19 +58,29 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/platform" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-platform">
+                  Platform Overview
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://cjis360.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-primary transition"
-                  data-testid="link-footer-platform"
+                  data-testid="link-footer-platform-login"
                 >
-                  Assessment Platform
+                  Platform Login
                 </a>
               </li>
               <li>
                 <Link href="/case-studies" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-case-studies">
                   Case Studies
+                </Link>
+              </li>
+              <li>
+                <Link href="/trust-center" className="text-sm text-muted-foreground hover:text-primary transition" data-testid="link-footer-trust-center">
+                  Trust Center
                 </Link>
               </li>
             </ul>
@@ -143,12 +153,26 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Compliance Disclaimer */}
+        <div className="pt-8 border-t" data-testid="footer-compliance-disclaimer">
+          <p className="text-xs text-muted-foreground leading-relaxed max-w-4xl">
+            CJIS360 provides software and professional services that support customer alignment with applicable CJIS Security Policy requirements. Use of CJIS360 does not itself constitute FBI, state CJIS Systems Agency, auditor, or third-party certification. The customer remains responsible for determining applicability, implementing required safeguards, and satisfying state-specific requirements.
+          </p>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-6 mt-6 border-t flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground text-center md:text-left">
             © {new Date().getFullYear()} CJIS360 Compliance Platform. All rights reserved.
           </p>
           <div className="flex gap-6">
+            <Link
+              href="/trust-center"
+              className="text-sm text-muted-foreground hover:text-primary transition"
+              data-testid="link-footer-trust-center-bottom"
+            >
+              Trust Center
+            </Link>
             <Link
               href="/terms"
               className="text-sm text-muted-foreground hover:text-primary transition"
