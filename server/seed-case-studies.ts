@@ -14,108 +14,108 @@ async function seedCaseStudies() {
 
   const caseStudiesToSeed = [
     {
-      title: "Statewide Police Department Achieves Full CJIS Compliance",
+      title: "Statewide Law Enforcement Agency Strengthens CJIS 6.0 Readiness",
       slug: "statewide-police-cjis-compliance",
-      clientName: "Metro State Police Department",
+      clientName: "A State Law Enforcement Agency",
       clientType: "State Law Enforcement Agency",
       industry: "Law Enforcement",
-      challenge: "Metro State Police Department was struggling to maintain CJIS 6.0 compliance across 50+ precincts with inconsistent security policies, outdated access controls, and fragmented training programs. Annual audits revealed critical gaps in mobile device security and incident response procedures.",
-      solution: "CJIS360 conducted a comprehensive compliance assessment across all precincts, implemented unified security policies, deployed automated monitoring systems, and delivered role-based training to 1,200+ personnel. Our platform centralized policy management and provided real-time compliance dashboards.",
+      challenge: "A large state law enforcement agency was managing CJIS 6.0 compliance across 50+ precincts with inconsistent security policies, outdated access controls, and fragmented training programs. Annual audits revealed gaps in mobile device security and incident response procedures that needed to be addressed.",
+      solution: "CJIS360 conducted a comprehensive compliance assessment across all precincts, implemented unified security policies, deployed automated monitoring systems, and delivered role-based training to 1,200+ personnel. Our platform centralized policy management and provided compliance dashboards to improve visibility and coordination.",
       results: [
-        "100% CJIS compliance achieved within 6 months",
-        "Zero critical findings in annual FBI audit",
-        "75% reduction in security policy violations",
-        "90% decrease in time spent on compliance documentation",
-        "Unified security posture across all 50+ precincts"
+        "Meaningfully improved CJIS compliance across all precincts",
+        "Significantly reduced critical security findings in audit reviews",
+        "Consolidated security policies and procedures across locations",
+        "Reduced time spent on manual compliance documentation",
+        "Improved compliance coordination across all precincts"
       ],
-      testimonial: "CJIS360 transformed our compliance program from a burden into a strategic advantage. Their platform made it easy to maintain consistency across our entire organization, and their team's expertise was invaluable during our FBI audit.",
-      testimonialAuthor: "Chief Sarah Martinez",
-      testimonialRole: "Chief Information Security Officer",
+      testimonial: undefined,
+      testimonialAuthor: undefined,
+      testimonialRole: undefined,
       metrics: [
         "50+ Precincts Unified",
         "1,200+ Personnel Trained",
         "6 Month Implementation",
-        "Zero Audit Findings"
+        "Improved Audit Readiness"
       ],
-      tags: ["State Agency", "Full Compliance", "Multi-Site", "Training"]
+      tags: ["State Agency", "Compliance", "Multi-Site", "Training"]
     },
     {
-      title: "County Sheriff's Office Secures Mobile Workforce",
+      title: "County Law Enforcement Implements Secure Mobile Access Program",
       slug: "county-sheriff-mobile-security",
-      clientName: "Riverside County Sheriff's Office",
+      clientName: "A County Sheriff's Office",
       clientType: "County Law Enforcement",
       industry: "Law Enforcement",
-      challenge: "With 300+ deputies using mobile devices in the field to access CJIS data, Riverside County Sheriff's Office faced significant security risks. Existing mobile device management was inadequate, and there was no clear policy for BYOD scenarios or encrypted communications.",
-      solution: "CJIS360 designed and implemented a comprehensive mobile security program including MDM deployment, encrypted communication protocols, secure containerization for CJIS data, and clear BYOD policies. We also established remote wipe capabilities and real-time device monitoring.",
+      challenge: "A county sheriff's office with 300+ deputies using mobile devices in the field to access CJIS data faced significant security risks. Existing mobile device management was inadequate, and there was no clear policy for BYOD scenarios or encrypted communications.",
+      solution: "CJIS360 designed and implemented a comprehensive mobile security program including MDM deployment, encrypted communication protocols, secure containerization for CJIS data, and clear BYOD policies. The program included monitoring capabilities and audit trail functionality for mobile CJIS access.",
       results: [
-        "300+ mobile devices secured under CJIS standards",
-        "100% encryption compliance for data in transit and at rest",
-        "Zero mobile-related security incidents in 18 months",
-        "50% faster field data access with improved security",
-        "Complete audit trail for all mobile CJIS access"
+        "Successfully secured 300+ mobile devices under CJIS standards",
+        "Implemented encryption for data in transit and at rest",
+        "Improved mobile security posture and audit trail capabilities",
+        "Enhanced field data access with improved security controls",
+        "Streamlined mobile CJIS access tracking and accountability"
       ],
-      testimonial: "Our deputies needed secure mobile access to CJIS data without compromising security. CJIS360 delivered a solution that actually improved both security and productivity. The FBI auditors were impressed with our mobile security controls.",
-      testimonialAuthor: "Sheriff James Rodriguez",
-      testimonialRole: "County Sheriff",
+      testimonial: undefined,
+      testimonialAuthor: undefined,
+      testimonialRole: undefined,
       metrics: [
         "300+ Devices Secured",
-        "100% Encryption",
-        "18 Months Zero Incidents",
-        "50% Faster Access"
+        "Encryption Implemented",
+        "18 Month Deployment",
+        "Field Ops Enhanced"
       ],
       tags: ["Mobile Security", "County Agency", "MDM", "Field Operations"]
     },
     {
-      title: "Regional Fusion Center Streamlines Multi-Agency Compliance",
+      title: "Regional Fusion Center Coordinates Multi-Agency Compliance Framework",
       slug: "fusion-center-multi-agency-compliance",
-      clientName: "Northeast Regional Fusion Center",
+      clientName: "A Regional Fusion Center",
       clientType: "Multi-Agency Intelligence Center",
       industry: "Intelligence & Law Enforcement",
-      challenge: "The Northeast Regional Fusion Center coordinates intelligence sharing across 12 law enforcement agencies, each with different compliance maturity levels. Ensuring consistent CJIS compliance while facilitating seamless information sharing was a major challenge, complicated by varying IT infrastructures.",
-      solution: "CJIS360 implemented a federated compliance framework that respected each agency's autonomy while ensuring unified CJIS standards. We deployed shared security controls, established inter-agency agreements, created standardized access protocols, and built a centralized compliance monitoring dashboard.",
+      challenge: "A regional fusion center coordinates intelligence sharing across 12 law enforcement agencies, each with different compliance maturity levels. Ensuring consistent CJIS compliance while facilitating information sharing was a challenge, complicated by varying IT infrastructures across participating agencies.",
+      solution: "CJIS360 implemented a federated compliance framework that respected each agency's autonomy while supporting unified CJIS standards. The solution included shared security controls, inter-agency coordination protocols, standardized access procedures, and centralized monitoring of compliance across participants.",
       results: [
-        "12 agencies brought to uniform CJIS compliance level",
-        "85% reduction in inter-agency data sharing delays",
-        "Centralized compliance monitoring across all participants",
-        "Simplified FBI audit process with unified documentation",
-        "Enhanced threat intelligence sharing with maintained security"
+        "Coordinated 12 agencies on aligned CJIS compliance standards",
+        "Meaningfully improved inter-agency data sharing efficiency",
+        "Implemented centralized compliance visibility across participants",
+        "Streamlined documentation and audit coordination",
+        "Enhanced information sharing with improved security controls"
       ],
-      testimonial: "Managing CJIS compliance across multiple agencies seemed impossible until CJIS360 showed us how. Their federated approach respected each agency's independence while ensuring we all met the same high standards. Information sharing is now faster and more secure.",
-      testimonialAuthor: "Director Michael Chen",
-      testimonialRole: "Fusion Center Director",
+      testimonial: undefined,
+      testimonialAuthor: undefined,
+      testimonialRole: undefined,
       metrics: [
-        "12 Agencies Unified",
-        "85% Faster Sharing",
-        "Single Audit Process",
-        "Zero Security Breaches"
+        "12 Agencies Coordinated",
+        "Shared Compliance Framework",
+        "Unified Audit Process",
+        "Enhanced Coordination"
       ],
       tags: ["Multi-Agency", "Fusion Center", "Intelligence", "Federated Security"]
     },
     {
-      title: "Municipal Police Department Passes First FBI Audit",
+      title: "Municipal Police Department Establishes CJIS Compliance Program",
       slug: "municipal-police-first-audit-success",
-      clientName: "Oakdale Police Department",
+      clientName: "A Municipal Police Department",
       clientType: "Municipal Police Department",
       industry: "Law Enforcement",
-      challenge: "Oakdale Police Department, a mid-sized agency with 150 officers, had never undergone an FBI CJIS audit and had no formal compliance program. With an audit scheduled in 90 days, they faced potential loss of CJIS access and severe operational disruption.",
-      solution: "CJIS360 executed a rapid 90-day compliance sprint: conducted emergency gap analysis, implemented critical security controls, established access management protocols, created comprehensive documentation, and delivered intensive staff training. We provided on-site support during the actual audit.",
+      challenge: "A mid-sized municipal agency with 150 officers had no formal CJIS compliance program and faced an audit within 90 days. The agency needed to rapidly establish compliance controls and processes to address identified gaps.",
+      solution: "CJIS360 executed an intensive 90-day engagement: conducted comprehensive gap analysis, implemented security controls, established access management protocols, created compliance documentation, and delivered staff training. The program provided foundational compliance processes and ongoing support.",
       results: [
-        "Zero critical findings in first FBI audit",
-        "Full CJIS compliance achieved in 90 days",
-        "Comprehensive security policy framework established",
-        "150+ personnel trained and certified",
-        "Ongoing compliance program for future audits"
+        "Significantly reduced critical compliance findings",
+        "Established comprehensive security policies and procedures",
+        "Trained 150+ personnel on CJIS compliance requirements",
+        "Implemented security controls across systems and processes",
+        "Created foundation for ongoing compliance management"
       ],
-      testimonial: "We were facing an FBI audit with no compliance program in place. CJIS360's team worked miracles in 90 days. Not only did we pass the audit, but we now have a sustainable compliance program that gives us confidence for the future.",
-      testimonialAuthor: "Chief Robert Thompson",
-      testimonialRole: "Chief of Police",
+      testimonial: undefined,
+      testimonialAuthor: undefined,
+      testimonialRole: undefined,
       metrics: [
-        "90 Day Sprint",
-        "Zero Critical Findings",
-        "150 Personnel Certified",
-        "First Audit Success"
+        "90 Day Program",
+        "Findings Reduced",
+        "150+ Personnel Trained",
+        "Program Established"
       ],
-      tags: ["Municipal Agency", "Rapid Implementation", "Audit Preparation", "Emergency Response"]
+      tags: ["Municipal Agency", "Rapid Implementation", "Compliance Program", "Training"]
     }
   ];
 

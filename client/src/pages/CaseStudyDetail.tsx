@@ -105,6 +105,15 @@ export default function CaseStudyDetailPage() {
         </div>
       </header>
 
+      {/* Disclaimer */}
+      <div className="bg-muted border-b">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <p className="text-sm text-muted-foreground" data-testid="disclaimer-note">
+            <strong>Note:</strong> This is an illustrative program profile based on common agency challenges. It does not represent a named, verified customer. Real customer case studies are published only with written approval.
+          </p>
+        </div>
+      </div>
+
       {/* Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
         {/* Metrics */}
@@ -203,10 +212,10 @@ export default function CaseStudyDetailPage() {
         <section className="pt-8 border-t">
           <div className="bg-muted/50 rounded-lg p-8 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4" data-testid="cta-title">
-              Ready to Transform Your Compliance Program?
+              Ready to Strengthen Your Compliance Program?
             </h3>
             <p className="text-muted-foreground mb-6" data-testid="cta-description">
-              Let's discuss how CJIS360 can deliver similar results for your agency.
+              Let's discuss how CJIS360 can help your agency address similar challenges.
             </p>
             <Link href="/#contact">
               <Button size="lg" data-testid="button-contact">

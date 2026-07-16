@@ -15,8 +15,16 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import {
+  Select,
+  SelectTrigger,
+  SelectContent,
+  SelectItem,
+  SelectValue,
+} from '@/components/ui/select';
+import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Loader2, CheckCircle2, AlertCircle, ShieldAlert } from 'lucide-react';
 
 export default function ContactForm() {
   const { toast } = useToast();
@@ -30,7 +38,16 @@ export default function ContactForm() {
       email: '',
       agencyName: '',
       phone: '',
+      organizationType: '',
+      state: '',
+      role: '',
+      employeeCount: '',
+      packageInterest: '',
+      auditTimeframe: '',
+      itReliance: '',
+      preferredContactMethod: '',
       message: '',
+      consent: false,
     },
   });
 
@@ -72,12 +89,25 @@ export default function ContactForm() {
   const hasErrors = Object.keys(form.formState.errors).length > 0;
 
   const onSubmit = (data: InsertContactSubmission) => {
-    mutation.mutate(data);
+    // Add the honeypot field to the payload
+    const websiteField = (document.querySelector('input[name="website"]') as HTMLInputElement)?.value || '';
+    mutation.mutate({
+      ...data,
+      website: websiteField,
+    } as any);
   };
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        {/* Security Warning Callout */}
+        <div className="bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-md p-4 flex items-start gap-3">
+          <ShieldAlert className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
+          <p className="text-sm text-amber-900 dark:text-amber-100">
+            Do not submit Criminal Justice Information, criminal-history records, case details, passwords, credentials, or sensitive system information through this form.
+          </p>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-6">
           <FormField
             control={form.control}

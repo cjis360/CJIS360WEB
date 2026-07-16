@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { pgTable, text, varchar, timestamp } from "drizzle-orm/pg-core";
+import { pgTable, text, varchar, timestamp, boolean } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -24,6 +24,15 @@ export const contactSubmissions = pgTable("contact_submissions", {
   agencyName: text("agency_name").notNull(),
   phone: text("phone"),
   message: text("message").notNull(),
+  organizationType: text("organization_type"),
+  state: text("state"),
+  role: text("role"),
+  employeeCount: text("employee_count"),
+  packageInterest: text("package_interest"),
+  auditTimeframe: text("audit_timeframe"),
+  itReliance: text("it_reliance"),
+  preferredContactMethod: text("preferred_contact_method"),
+  consent: boolean("consent").notNull().default(false),
   createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
@@ -36,6 +45,17 @@ export const insertContactSubmissionSchema = createInsertSchema(contactSubmissio
   agencyName: z.string().min(2, "Agency name must be at least 2 characters"),
   phone: z.string().optional(),
   message: z.string().min(10, "Message must be at least 10 characters"),
+  organizationType: z.string().optional(),
+  state: z.string().optional(),
+  role: z.string().optional(),
+  employeeCount: z.string().optional(),
+  packageInterest: z.string().optional(),
+  auditTimeframe: z.string().optional(),
+  itReliance: z.string().optional(),
+  preferredContactMethod: z.string().optional(),
+  consent: z.boolean().refine(v => v === true, {
+    message: "You must acknowledge the privacy notice to continue.",
+  }),
 });
 
 export type InsertContactSubmission = z.infer<typeof insertContactSubmissionSchema>;

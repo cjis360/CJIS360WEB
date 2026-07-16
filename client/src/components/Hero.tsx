@@ -1,5 +1,6 @@
 import { ArrowRight, ShieldAlert, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'wouter';
 import lawEnforcementAI from '@assets/cjis_stock_images6_1763930832082.jpg';
 import femaleITStaff from '@assets/cjis_stock_images8_1763930832082.jpg';
 import maleITStaff from '@assets/cjis_stock_images9_1763930832082.jpg';
@@ -29,20 +30,20 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Is Your Agency
-              <span className="block text-primary mt-2">Actually Compliant?</span>
+              Operationalize CJIS 6.0 Compliance
+              <span className="block text-primary mt-2">With One Purpose-Built Platform</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              CJIS 6.0 introduced over 180 primary controls and 1,300+ subcontrols. Most agencies believe they are compliant — until an audit proves otherwise. We find the gaps before the FBI does.
+              CJIS360 helps law enforcement agencies, courts, corrections organizations, noncriminal justice agencies, and service providers assess CJIS requirements, identify gaps, collect evidence, manage remediation, track training, and maintain continuous audit readiness.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
                 onClick={scrollToContact}
                 className="text-lg gap-2"
-                data-testid="button-hero-assessment"
+                data-testid="button-hero-demo"
               >
-                Schedule a Free Assessment
+                Request a Platform Demonstration
                 <ArrowRight size={20} />
               </Button>
               <Button
@@ -50,16 +51,29 @@ export default function Hero() {
                 variant="outline"
                 asChild
                 className="text-lg"
-                data-testid="button-hero-try-platform"
+                data-testid="button-hero-explore-platform"
               >
+                <Link href="/platform">
+                  Explore the Platform
+                </Link>
+              </Button>
+            </div>
+
+            {/* Platform login and trust statement */}
+            <div className="mt-6 flex flex-col gap-4">
+              <p className="text-sm text-muted-foreground">
                 <a
                   href="https://cjis360.app"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-primary hover:underline"
                 >
-                  Try the Platform
+                  Platform Login
                 </a>
-              </Button>
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Built for organizations that access, process, transmit, store, or support Criminal Justice Information.
+              </p>
             </div>
 
             {/* Quick trust signals */}

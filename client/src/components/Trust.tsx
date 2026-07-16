@@ -1,30 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Quote } from 'lucide-react';
-
-const stats = [
-  { value: '18,000', label: 'Agencies in CJIS 6.0 Scope' },
-  { value: '25+', label: 'Agencies Engaged' },
-  { value: '180+', label: 'CJIS 6.0 Controls Mapped' },
-  { value: '1,300+', label: 'Policy Subcontrols in Scope' },
-];
-
-const testimonials = [
-  {
-    quote: 'CJIS360 found gaps in our access control implementation that our internal review had completely missed. Their assessment report gave us a clear remediation roadmap we could act on immediately.',
-    author: 'Chief Michael Rodriguez',
-    title: 'IT Director, Metro Police Department',
-  },
-  {
-    quote: 'We brought in CJIS360 three months before our state audit. Their policy review and staff interviews identified seven control deficiencies. We remediated all of them and passed without a single finding.',
-    author: 'Sarah Chen',
-    title: 'Compliance Officer, County Sheriff\'s Office',
-  },
-  {
-    quote: 'The Stop. Scrutinize. Verify. framework gave our team a structured way to think about compliance — not just as a checklist, but as an ongoing operational discipline. That shift in mindset has been invaluable.',
-    author: 'James Patterson',
-    title: 'Director of Security, State Law Enforcement Agency',
-  },
-];
+import { Link } from 'wouter';
 
 export default function Trust() {
   return (
@@ -32,55 +7,68 @@ export default function Trust() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Trusted by Agencies Nationwide
+            Built on Method, Not Marketing Claims
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From small county departments to multi-agency task forces — agencies at every scale.
+            CJIS360 is built on a transparent, repeatable methodology for assessing and implementing CJIS Security Policy requirements.
           </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="text-center"
-              data-testid={`stat-${index}`}
-            >
-              <div className="text-4xl lg:text-5xl font-bold text-primary mb-2" data-testid={`stat-value-${index}`}>
-                {stat.value}
-              </div>
-              <div className="text-sm lg:text-base text-muted-foreground" data-testid={`stat-label-${index}`}>
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
+        <div className="space-y-8 max-w-4xl mx-auto">
+          {/* Methodology Card */}
+          <Card>
+            <CardContent className="pt-6 space-y-4">
+              <h3 className="text-2xl font-semibold text-foreground">Assessment & Implementation Methodology</h3>
+              <p className="text-foreground leading-relaxed">
+                CJIS360 uses a structured approach grounded in the Stop. Scrutinize. Verify.™ methodology to help organizations evaluate their current state, identify policy alignment gaps, and implement targeted remediation. Our approach is systematic and repeatable, designed to provide clarity on the scope and status of CJIS Security Policy requirements relevant to your organization.
+              </p>
+            </CardContent>
+          </Card>
 
-        {/* Testimonials */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={index}
-              className="hover-elevate transition-transform duration-300 hover:-translate-y-2"
-              data-testid={`card-testimonial-${index}`}
-            >
-              <CardContent className="pt-6 space-y-4">
-                <Quote className="w-8 h-8 text-primary/30" />
-                <p className="text-base leading-relaxed text-foreground" data-testid={`testimonial-quote-${index}`}>
-                  "{testimonial.quote}"
-                </p>
-                <div className="pt-4 border-t">
-                  <div className="font-semibold text-foreground" data-testid={`testimonial-author-${index}`}>
-                    {testimonial.author}
-                  </div>
-                  <div className="text-sm text-muted-foreground" data-testid={`testimonial-title-${index}`}>
-                    {testimonial.title}
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+          {/* Demonstration Environment Card */}
+          <Card>
+            <CardContent className="pt-6 space-y-4">
+              <h3 className="text-2xl font-semibold text-foreground">About Our Demonstration Environment</h3>
+              <p className="text-foreground leading-relaxed">
+                The CJIS360 platform demonstration uses a sanitized, non-production demonstration tenant. No real customer data, production systems, or actual law enforcement information is processed or stored in this environment. This ensures privacy and security while allowing teams to explore the platform's capabilities.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Team Qualifications Card */}
+          <Card>
+            <CardContent className="pt-6 space-y-4">
+              <h3 className="text-2xl font-semibold text-foreground">Team Qualifications</h3>
+              <p className="text-foreground leading-relaxed">
+                CJIS360 is developed and supported by professionals with deep experience in compliance and security engineering, including practitioners who have worked with CJIS Security Policy requirements in operational settings. Our team brings practical understanding of the challenges organizations face when implementing CJIS controls.
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Trust Center Link Card */}
+          <Card>
+            <CardContent className="pt-6 space-y-4">
+              <h3 className="text-2xl font-semibold text-foreground">Security & Compliance Documentation</h3>
+              <p className="text-foreground leading-relaxed mb-4">
+                For detailed information about CJIS360's security practices, privacy commitments, and compliance documentation, visit our Trust Center.
+              </p>
+              <Link href="/trust-center">
+                <a className="inline-block px-6 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">
+                  Visit the Trust Center
+                </a>
+              </Link>
+            </CardContent>
+          </Card>
+
+          {/* Disclaimer */}
+          <div
+            className="border border-yellow-600/30 bg-yellow-50 dark:bg-yellow-950/20 rounded-lg p-6"
+            data-testid="compliance-disclaimer"
+          >
+            <p className="text-sm text-foreground leading-relaxed">
+              CJIS360 provides software and professional services that support customer alignment with applicable CJIS Security Policy requirements. Use of CJIS360 does not itself constitute FBI, state CJIS Systems Agency, auditor, or third-party certification. The customer remains responsible for determining applicability, implementing required safeguards, and satisfying state-specific requirements.
+            </p>
+          </div>
         </div>
       </div>
     </section>
