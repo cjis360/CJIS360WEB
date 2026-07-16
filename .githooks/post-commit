@@ -1,10 +1,13 @@
 #!/bin/bash
-# Post-commit hook: automatically push to GitHub backup after every commit.
+# Post-commit hook: automatically push to GitHub backup after every commit on main.
 # Requires the GITHUB_PAT environment variable (set as a Replit secret).
+# Sync failures print a warning but do NOT block the local commit from completing.
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 SYNC_SCRIPT="${REPO_ROOT}/scripts/sync-github.sh"
 
 if [ -f "$SYNC_SCRIPT" ]; then
-  bash "$SYNC_SCRIPT" || true
+  if ! bash "$SYNC_SCRIPT"; then
+    echo "[sync-github] WARNING: GitHub backup sync failed. See above for details." >&2
+  fi
 fi
